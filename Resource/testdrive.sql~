@@ -17,10 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `INMOBILIARIA`
+-- Base de datos: `testdrive`
 --
-CREATE DATABASE IF NOT EXISTS `INMOBILIARIA` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `INMOBILIARIA`;
+CREATE DATABASE IF NOT EXISTS `testdrive` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `testdrive`;
 
 -- --------------------------------------------------------
 
