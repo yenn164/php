@@ -15,3 +15,27 @@ REQUEST_URI=/testdrive/index.php?r=site/login
 in /var/www/testdrive/protected/components/UserIdentity.php (29)
 in /var/www/testdrive/protected/models/LoginForm.php (52)
 in /var/www/testdrive/protected/controllers/SiteController.php (94)
+2014/06/18 21:54:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yii".' in /var/www/netbeansInmob/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/netbeansInmob/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('yii')
+#1 /var/www/netbeansInmob/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/netbeansInmob/BackOffice/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/netbeansInmob/BackOffice/index.php?r=yii
+---
+2014/06/18 21:54:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiic".' in /var/www/netbeansInmob/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/netbeansInmob/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('yiic')
+#1 /var/www/netbeansInmob/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/netbeansInmob/BackOffice/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/netbeansInmob/BackOffice/index.php?r=yiic
+---
+2014/06/18 21:54:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "yiic".' in /var/www/netbeansInmob/yii_framework/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/netbeansInmob/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('yiic')
+#1 /var/www/netbeansInmob/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /var/www/netbeansInmob/BackOffice/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/netbeansInmob/BackOffice/index.php?r=yiic
+---
