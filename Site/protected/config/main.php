@@ -60,9 +60,8 @@ return array(
 			'connectionString' =>'sqlite:protected/data/source.db',// 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),*/
 		// uncomment the following to use a MySQL database
-		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=test',
+			'connectionString' => 'mysql:host=localhost;dbname=INMOBILIARIA',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '123456',
