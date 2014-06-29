@@ -5,7 +5,7 @@
 -- Servidor: localhost
 -- Tiempo de generación: 18-06-2014 a las 22:51:39
 -- Versión del servidor: 5.5.35-0ubuntu0.12.04.2
--- Versión de PHP: 5.3.10-1ubuntu3.11
+-- Versión de PHP: 5.3.10-1ubuntu3.11 JOTA
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
