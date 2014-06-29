@@ -23,9 +23,11 @@ $this->breadcrumbs=array(
                                     'validateOnSubmit'=>true,
                             ),
                     )); ?>
+                     <div class="flash-success">
+                            <?php echo Yii::app()->user->getFlash('contact'); ?>
+                    </div>
                      <p class="note">Los campos con <span class="required">*</span> son requeridos.</p>
-                   <?php echo $form->errorSummary($model); ?>
-                     
+                    
                 <div>
                     <span><?php echo $form->labelEx($model,'name'); ?></span>
                     <span><?php echo $form->textField($model,'name', array('class'=>'textbox'))?></span>

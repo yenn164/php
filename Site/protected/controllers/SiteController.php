@@ -57,14 +57,24 @@ class SiteController extends Controller
 			if($model->validate())
 			{
 				$name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-				$subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
+				$subject="Consulta Web - $name";
 				$headers="From: $name <{$model->email}>\r\n".
 					"Reply-To: {$model->email}\r\n".
 					"MIME-Version: 1.0\r\n".
 					"Content-type: text/plain; charset=UTF-8";
-
-				mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-				Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
+                                
+				$mail=Yii::app()->Smtpmail;
+                                $mail->SetFrom($model->email, "Consulta Web- $model->name");
+                                $mail->Subject= $subject;
+                                $mail->MsgHTML("$model->subject <br/><br/> Nombre:$model->name <br/> Telefono:$model->phone");  
+                                $mail->AddAddress(Yii::app()->params['contactEmail'], "");
+                                
+                                 if(!$mail->Send()) {
+                                    Yii::app()->user->setFlash('contact','No se pudo enviar, intente nuevamente mas tarde.');         
+                                 }
+                                else{
+                                    Yii::app()->user->setFlash('contact','Gracias por contactarse con nosotros. Le responderemos tan pronto como sea posible.');
+                                }
 				$this->refresh();
 			}
 		}

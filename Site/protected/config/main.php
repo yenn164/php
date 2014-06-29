@@ -106,8 +106,8 @@ return array(
             'Smtpmail'=>array(
             'class'=>'application.extensions.smtpmail.PHPMailer',
             'Host'=>"smtp.gmail.com",
-            'Username'=>'yenn2005@gmail.com',
-            'Password'=>'YOURPASSWORDHERE',
+            'Username'=>'contacto.domusinmo@gmail.com',
+            'Password'=>'domus123',
             'Mailer'=>'smtp',
             'Port'=>587,
             'SMTPAuth'=>true,
@@ -120,5 +120,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+                'contactEmail'=>'contacto.domusinmo@gmail.com',
 	),
 );
