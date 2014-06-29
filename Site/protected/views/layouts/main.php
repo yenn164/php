@@ -52,20 +52,7 @@
 						$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 					});
 				});
-			</script>
-        
-	<!--End Custom-->
-        
-        <!-- blueprint CSS framework 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
-	<!--[if lt IE 8]>
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
-	<![endif]-->
-
-	<!--<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
-        -->
+			</script
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -75,7 +62,7 @@
 <div class="wrap">
 	<div class="header">
 		<div class="logo">
-			<a href="aiarray('/site/index')"><img src="<?php echo Yii::app()->request->baseUrl; ?>/content/images/logo_domus_small.png" alt=""/> </a>
+			<a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/content/images/logo_domus_small.png" alt=""/> </a>
 		</div>
 		<div class="h_search">
     		<form>
@@ -92,7 +79,7 @@
 	<div class="header_sub">
 		<div class="h_menu">
 			<ul>
-				<li class="active"><a href="index.html">Inicio</a></li> |
+				<li class="active"><a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>">Inicio</a></li> |
 				<li><a href="listado.html">Listado<a></li> |
 				<li><a href="avanzada.html">Búsqueda Avanzada</a></li> |
                                 <li><a href="echo Url::toRoute(['page', 'id' => 'avanzada']);">Búsqueda Avanzada</a></li> |
@@ -105,18 +92,18 @@
 	          <nav class="nav">	        	
 	    	    <a href="#" id="w3-menu-trigger"> </a>
 	                  <ul class="nav-list" style="">
-	            	        <li class="nav-item"><a class="active" href="index.html">Inicio</a></li>
+	            	        <li class="nav-item"><a class="active" href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>">Inicio</a></li>
 							<li class="nav-item"><a href="listado.html">Listado</a></li>
 							<li class="nav-item"><a href="avanzada.html">Búsqueda Avanzada</a></li>
 							<li class="nav-item"><a href="mapa.html">Ubicación en Mapa</a></li>
 							<li class="nav-item"><a href="servicio.html">Servicios</a></li>
-							<li class="nav-item"><a href="contacto.html">Contact</a></li>
+							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('site/contact', array("view"=>"contact")); ?>">Contact</a></li>
 	                 </ul>
 	           </nav>
 	             <div class="search_box">
-				<form>
+				
 				   <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-			    </form>
+			    
 			</div>
 	          <div class="clear"> </div>
 	          <script src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/responsive.menu.js"></script>
