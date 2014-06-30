@@ -147,6 +147,7 @@
 					easingType: 'linear' 
 		 		};
 				
+                                
 				
 				$().UItoTop({ easingType: 'easeOutQuart' });
 				
