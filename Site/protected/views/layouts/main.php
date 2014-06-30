@@ -52,7 +52,7 @@
 						$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
 					});
 				});
-			</script
+			</script>
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
