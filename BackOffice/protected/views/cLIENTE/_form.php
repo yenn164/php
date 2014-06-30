@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'nombre'); ?>
 	</div>
 
@@ -41,13 +41,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
 

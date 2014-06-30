@@ -39,3 +39,430 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/netbeansInmob/BackOffice/index.php?r=yiic
 ---
+2014/06/30 18:07:36 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.DomusAdmin" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php(57): CComponent->__get('DomusAdmin')
+#1 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#2 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#3 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#4 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#5 /var/www/yii_framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(206): COutputProcessor->run()
+#7 /var/www/yii_framework/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#8 /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#9 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#11 /var/www/yii_framework/framework/web/CController.php(784): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#12 /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php(32): CController->render('index')
+#13 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#14 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /var/www/yii_framework/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('')
+#18 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('')
+#19 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#20 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#21 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/
+---
+2014/06/30 18:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 18:24:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 18:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 18:27:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+---
+2014/06/30 18:27:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+---
+2014/06/30 18:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+---
+2014/06/30 18:44:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+---
+2014/06/30 18:47:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmuebles".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmuebles')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmuebles')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmuebles')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmuebles&view=inmuebles
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+---
+2014/06/30 18:47:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "INMUEBLE".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('INMUEBLE')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('INMUEBLE')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/INMUEBLE')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/INMUEBLE&view=INMUEBLE
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 18:50:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "INMUEBLE".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('INMUEBLE')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('INMUEBLE')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/INMUEBLE')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/INMUEBLE&view=INMUEBLE
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 18:50:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "INMUEBLE".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('INMUEBLE')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('INMUEBLE')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/INMUEBLE')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/INMUEBLE&view=Index
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/INMUEBLE&view=INMUEBLE
+---
+2014/06/30 18:50:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "INMUEBLE".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('INMUEBLE')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('INMUEBLE')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/INMUEBLE')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/INMUEBLE&view=Index
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 18:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "inmueble".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('inmueble')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('inmueble')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('site/inmueble')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/inmueble&view=Index
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 19:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('logout')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('logout')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/logout')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/logout&view=logout
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+---
+2014/06/30 19:16:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logout".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('logout')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('logout')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/logout')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/logout
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+---
+2014/06/30 19:16:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in /var/www/yii_framework/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(270): CController->missingAction('login')
+#1 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('login')
+#2 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/login')
+#3 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#5 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/login&view=login
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+---
+2014/06/30 19:49:00 [error] [php] Undefined index: logged (/var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php:64)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/yii_framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/yii_framework/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii_framework/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/yii_framework/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii_framework/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+in /var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php (64)
+in /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php (6)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php (32)
+2014/06/30 19:51:41 [error] [php] Undefined index: login (/var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php:64)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/yii_framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/yii_framework/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii_framework/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/yii_framework/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii_framework/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=site/index&view=index
+in /var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php (64)
+in /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php (6)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php (32)
+2014/06/30 20:04:50 [error] [php] Undefined index: login (/var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php:64)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#1 /var/www/yii_framework/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#2 /var/www/yii_framework/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(206): CContentDecorator->run()
+#4 /var/www/yii_framework/framework/web/CBaseController.php(300): SiteController->endWidget()
+#5 /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php(6): SiteController->endContent()
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#8 /var/www/yii_framework/framework/web/CController.php(784): SiteController->renderFile()
+#9 /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php(32): SiteController->render()
+#10 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#11 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /var/www/yii_framework/framework/web/CController.php(286): SiteController->runAction()
+#13 /var/www/yii_framework/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#14 /var/www/yii_framework/framework/web/CWebApplication.php(282): SiteController->run()
+#15 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#16 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#17 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/
+in /var/www/inmobiliaria/BackOffice/protected/views/layouts/main.php (64)
+in /var/www/inmobiliaria/BackOffice/protected/views/layouts/column1.php (6)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/SiteController.php (32)
+2014/06/30 20:19:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/login
+---
+2014/06/30 20:19:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('INMUEBLE/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=INMUEBLE/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=USER/Admin&view=admin
+---
+2014/06/30 20:19:49 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('CLIENTE/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=CLIENTE/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/Admin&view=admin
+---
+2014/06/30 20:19:54 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=CLIENTE/Admin&view=admin
+---
+2014/06/30 20:19:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=USER/Admin&view=admin
+---
+2014/06/30 20:20:09 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('INMUEBLE/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=INMUEBLE/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/
+---
+2014/06/30 20:22:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('INMUEBLE/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=INMUEBLE/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php
+---
+2014/06/30 20:22:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('CLIENTE/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=CLIENTE/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/Admin&view=admin
+---
+2014/06/30 20:22:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('Admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/Admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/Admin&view=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=CLIENTE/Admin&view=admin
+---
