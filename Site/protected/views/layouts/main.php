@@ -10,19 +10,11 @@
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/style.css" rel="stylesheet" type="text/css" media="all"/>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/jquery.min.js"></script>
-        <!-- start slider -->		
-        <link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/slider.css" rel="stylesheet" type="text/css" media="all"/>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/modernizr.custom.28468.js"></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/jquery.cslider.js"></script>
-	<script type="text/javascript">
-		$(function() {
-			$('#da-slider').cslider();
-		});
-	</script>
-        <!-- Owl Carousel Assets -->
+        
+        <!-- Owl Carousel Assets 
 		<link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
 		     <!-- Owl Carousel Assets -->
-		    <!-- Prettify -->
+		    <!-- Prettify 
 		    <script src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/owl.carousel.js"></script>
                      <script>
 		    $(document).ready(function() {
