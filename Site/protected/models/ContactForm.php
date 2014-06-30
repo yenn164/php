@@ -19,9 +19,9 @@ class ContactForm extends CFormModel
 	{
 		return array(
 			// name, email, subject and body are required
-			array('name, email, subject', 'required'),
+			array('name, email, subject', 'required', 'message' => 'El campo es requerido.'),
 			// email has to be a valid email address
-			array('email', 'email')
+			array('email', 'email', 'message' => 'El campo es invalido.')
 		);
 	}
 
