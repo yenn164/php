@@ -46,7 +46,7 @@ $this->breadcrumbs=array(
                 <div>
                     <span><?php echo $form->labelEx($model,'subject'); ?></span>
                     <span><?php echo $form->textArea($model,'subject',array('rows'=>6, 'cols'=>50)); ?></span>
-                    <span><?php echo $form->error($model,'phosubjectne'); ?></span>
+                    <span><?php echo $form->error($model,'subject'); ?></span>
                 </div>
                <div>
                             <span>

@@ -56,12 +56,7 @@
 		<div class="logo">
 			<a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/content/images/logo_domus_small.png" alt=""/> </a>
 		</div>
-		<div class="h_search">
-    		<form>
-    			<input type="text" value="">
-    			<input type="submit" value="">
-    		</form>
-		</div>
+		
 		<div class="clear"></div>
 	</div>
 </div>
@@ -76,7 +71,7 @@
 				<li><a href="avanzada.html">Búsqueda Avanzada</a></li> |
                                 <li><a href="echo Url::toRoute(['page', 'id' => 'avanzada']);">Búsqueda Avanzada</a></li> |
 				<li><a href="mapa.html">Ubicación en Mapa</a></li> |
-				<li><a href="servicio.html">Servicios</a></li> |
+				<li><a href="<?php echo Yii::app()->createUrl('service/index', array("view"=>"index")); ?>">Servicios</a></li> |
                                 <li><a href="<?php echo Yii::app()->createUrl('site/contact', array("view"=>"contact")); ?>">Contacto</a></li>
 			</ul>
 		</div>
@@ -88,7 +83,7 @@
 							<li class="nav-item"><a href="listado.html">Listado</a></li>
 							<li class="nav-item"><a href="avanzada.html">Búsqueda Avanzada</a></li>
 							<li class="nav-item"><a href="mapa.html">Ubicación en Mapa</a></li>
-							<li class="nav-item"><a href="servicio.html">Servicios</a></li>
+							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('service/index', array("view"=>"index")); ?>">Servicios</a></li>
 							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('site/contact', array("view"=>"contact")); ?>">Contact</a></li>
 	                 </ul>
 	           </nav>
