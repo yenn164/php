@@ -19,6 +19,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+                'application.extensions.*'
 	),
         'theme'=>'bootstrap',
 	'modules'=>array(
@@ -113,6 +114,9 @@ return array(
             'SMTPAuth'=>true,
             'SMTPSecure' => 'tls',
         ),
+        'RESTClient' => array(
+            'class' => 'application.extensions.RESTClient',
+            ),
 	),
 
 	// application-level parameters that can be accessed
