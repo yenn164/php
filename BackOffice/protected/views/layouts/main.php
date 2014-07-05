@@ -47,11 +47,9 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-        <a href="<?php echo Yii::app()->createUrl('CLIENTE/index', array("view"=>"index")); ?>">INDEX CLIENTE</a>
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		Copyright &copy; <?php echo date('Y'); ?> por Grupo 07 Taller de PHP - Tecnológo en Informática.<br/>
+		<br/>
 	</div><!-- footer -->
 
 </div><!-- page -->
