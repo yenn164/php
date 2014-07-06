@@ -67,7 +67,7 @@
 		<div class="h_menu">
 			<ul>
 				<li class="active"><a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>">Inicio</a></li> |
-				<li><a href="listado.html">Listado<a></li> |
+				<li><a href="<?php echo Yii::app()->createUrl('property/index', array("view"=>"index")); ?>">Listado<a></li> |
 				<li><a href="avanzada.html">Búsqueda Avanzada</a></li> |
                                 <li><a href="echo Url::toRoute(['page', 'id' => 'avanzada']);">Búsqueda Avanzada</a></li> |
 				<li><a href="mapa.html">Ubicación en Mapa</a></li> |
@@ -80,7 +80,7 @@
 	    	    <a href="#" id="w3-menu-trigger"> </a>
 	                  <ul class="nav-list" style="">
 	            	        <li class="nav-item"><a class="active" href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>">Inicio</a></li>
-							<li class="nav-item"><a href="listado.html">Listado</a></li>
+							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('property/index', array("view"=>"index")); ?>">Listado</a></li>
 							<li class="nav-item"><a href="avanzada.html">Búsqueda Avanzada</a></li>
 							<li class="nav-item"><a href="mapa.html">Ubicación en Mapa</a></li>
 							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('service/index', array("view"=>"index")); ?>">Servicios</a></li>
