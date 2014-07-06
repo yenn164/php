@@ -31,6 +31,9 @@ class INMUEBLE extends CActiveRecord
 	 * @param string $className active record class name.
 	 * @return INMUEBLE the static model class
 	 */
+    
+        public $picture;
+        
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
@@ -56,9 +59,12 @@ class INMUEBLE extends CActiveRecord
 			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, idubicacion', 'numerical', 'integerOnly'=>true),
 			array('gastosComunes, superEdif', 'length', 'max'=>6),
 			array('tipo', 'length', 'max'=>10),
+                        array('foto, foto2, foto3, foto4, foto5', 'length', 'max'=>200),
+			array('fechaPublicacion', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo, idubicacion', 'safe', 'on'=>'search'),
+                        array('picture', 'file','types'=>'jpg, gif, png'),
 		);
 	}
 
@@ -70,6 +76,8 @@ class INMUEBLE extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'idubicacion0' => array(self::BELONGS_TO, 'UBICACION', 'idubicacion'),
+		    'tRANSACIONs' => array(self::HAS_MANY, 'TRANSACION', 'idInmueble'),
 		);
 	}
 
@@ -97,7 +105,12 @@ class INMUEBLE extends CActiveRecord
 			'nivelado' => 'Nivelado',
 			'agreste' => 'Agreste',
 			'tipo' => 'Tipo',
-			'idubicacion' => 'Idubicacion',
+                    	'idubicacion' => 'Idubicacion',
+                        'foto' => 'Foto',
+			'foto2' => 'Foto2',
+			'foto3' => 'Foto3',
+			'foto4' => 'Foto4',
+			'foto5' => 'Foto5',
 		);
 	}
 
@@ -131,6 +144,11 @@ class INMUEBLE extends CActiveRecord
 		$criteria->compare('agreste',$this->agreste);
 		$criteria->compare('tipo',$this->tipo,true);
 		$criteria->compare('idubicacion',$this->idubicacion);
+                $criteria->compare('foto',$this->foto,true);
+		$criteria->compare('foto2',$this->foto2,true);
+		$criteria->compare('foto3',$this->foto3,true);
+		$criteria->compare('foto4',$this->foto4,true);
+		$criteria->compare('foto5',$this->foto5,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
