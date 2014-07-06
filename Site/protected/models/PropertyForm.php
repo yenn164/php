@@ -1,15 +1,27 @@
 <?php
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- * Description of PropertyForm
+ * This is the model class for table "INMUEBLE".
  *
- * @author php
+ * The followings are the available columns in table 'INMUEBLE':
+ * @property integer $idinmueble
+ * @property string $fechaPublicacion
+ * @property string $gastosComunes
+ * @property string $superEdif
+ * @property integer $anioConst
+ * @property integer $dormitorios
+ * @property integer $banios
+ * @property integer $cocina
+ * @property integer $living
+ * @property integer $comedor
+ * @property integer $terraza
+ * @property integer $piso
+ * @property integer $equipado
+ * @property integer $padron
+ * @property integer $mejoras
+ * @property integer $nivelado
+ * @property integer $agreste
+ * @property string $tipo
+ * @property integer $idubicacion
  */
 class PropertyForm extends CActiveRecord
 {
@@ -31,7 +43,15 @@ class PropertyForm extends CActiveRecord
 		return 'INMUEBLE';
 	}
 
-	
+	public function relations()
+	{
+		// NOTE: you may need to adjust the relation name and the related
+		// class name for the relations automatically generated below.
+		return array(
+                    'idubicacion0' => array(self::BELONGS_TO, 'UBICACION', 'idubicacion'),
+		    'tRANSACIONs' => array(self::HAS_MANY, 'TRANSACION', 'idInmueble'),
+		);
+	}
 
 	/**
 	 * @return array customized attribute labels (name=>label)

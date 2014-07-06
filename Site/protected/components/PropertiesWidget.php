@@ -14,7 +14,17 @@
 class PropertiesWidget extends CWidget {
 
     public function run() {
-        $models = PropertyForm::model();
+        
+       /* $model=new PropertyForm('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['INMUEBLE']))
+			$model->attributes=$_GET['INMUEBLE'];
+
+		$this->render('admin',array(
+			'model'=>$model,
+		));
+*/                
+        $models = NEW PropertyForm('serch');
 
         $this->render('properties', array(
             'models'=>$models   
