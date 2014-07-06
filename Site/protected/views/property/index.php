@@ -1,5 +1,5 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - Inmuebles';
+/*$this->pageTitle=Yii::app()->name . ' - Inmuebles';
 $this->breadcrumbs=array(
 	'Inmuebles',
 );
@@ -73,4 +73,4 @@ $this->breadcrumbs=array(
                 </div>
             </div>
         </div>
-           
+           */

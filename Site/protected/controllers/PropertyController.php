@@ -28,10 +28,7 @@ class PropertyController extends Controller {
     {
             // renders the view file 'protected/views/site/index.php'
             // using the default layout 'protected/views/layouts/main.php'
-           $dataProvider=new CActiveDataProvider('INMUEBLE');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-	    ));
+            $this->render('index');
     }
     
 }
