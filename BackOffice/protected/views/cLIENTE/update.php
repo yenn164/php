@@ -5,17 +5,17 @@
 $this->breadcrumbs=array(
 	'Clientes'=>array('index'),
 	$model->idCliente=>array('view','id'=>$model->idCliente),
-	'Update',
+	'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List CLIENTE', 'url'=>array('index')),
-	array('label'=>'Create CLIENTE', 'url'=>array('create')),
-	array('label'=>'View CLIENTE', 'url'=>array('view', 'id'=>$model->idCliente)),
-	array('label'=>'Manage CLIENTE', 'url'=>array('admin')),
+	array('label'=>'Listar Clientes', 'url'=>array('index')),
+	array('label'=>'Nuevo Cliente', 'url'=>array('create')),
+	array('label'=>'Ver Cliente', 'url'=>array('view', 'id'=>$model->idCliente)),
+	array('label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update CLIENTE <?php echo $model->idCliente; ?></h1>
+<h1>Actualizar Cliente <?php echo $model->idCliente; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

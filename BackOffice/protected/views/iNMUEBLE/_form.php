@@ -11,78 +11,86 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'fechaPublicacion'); ?>
-		<?php echo $form->textField($model,'fechaPublicacion'); ?>
-		<?php echo $form->error($model,'fechaPublicacion'); ?>
+        
+        <div class="row">
+                <a href="<?php echo Yii::app()->createUrl('UBICACION/create', array("view"=>"create")); ?>">Nueva Ubicación</a>
+		<?php echo $form->labelEx($model,'Id Ubicación'); ?>
+		<?php echo $form->textField($model,'idubicacion'); ?>
+		<?php echo $form->error($model,'idubicacion'); ?>
+            
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'gastosComunes'); ?>
+		<?php echo $form->labelEx($model,'Fecha de Publicación'); ?>
+		<?php echo $form->textField($model,'fechaPublicacion'); ?>
+                    <?php echo $form->error($model,'fechaPublicacion'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Gastos Comunes'); ?>
 		<?php echo $form->textField($model,'gastosComunes',array('size'=>6,'maxlength'=>6)); ?>
 		<?php echo $form->error($model,'gastosComunes'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'superEdif'); ?>
+		<?php echo $form->labelEx($model,'Superficie Edificada'); ?>
 		<?php echo $form->textField($model,'superEdif',array('size'=>6,'maxlength'=>6)); ?>
 		<?php echo $form->error($model,'superEdif'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'anioConst'); ?>
+		<?php echo $form->labelEx($model,'Año de Construcción'); ?>
 		<?php echo $form->textField($model,'anioConst'); ?>
 		<?php echo $form->error($model,'anioConst'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'dormitorios'); ?>
+		<?php echo $form->labelEx($model,'Cantidad de Dormitorios'); ?>
 		<?php echo $form->textField($model,'dormitorios'); ?>
 		<?php echo $form->error($model,'dormitorios'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'banios'); ?>
+		<?php echo $form->labelEx($model,'Cantidad de Baños'); ?>
 		<?php echo $form->textField($model,'banios'); ?>
 		<?php echo $form->error($model,'banios'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cocina'); ?>
+		<?php echo $form->labelEx($model,'Cantidad de Cocinas'); ?>
 		<?php echo $form->textField($model,'cocina'); ?>
 		<?php echo $form->error($model,'cocina'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'living'); ?>
+		<?php echo $form->labelEx($model,'Tiene Living'); ?>
 		<?php echo $form->textField($model,'living'); ?>
 		<?php echo $form->error($model,'living'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'comedor'); ?>
+		<?php echo $form->labelEx($model,'Tiene Comedor'); ?>
 		<?php echo $form->textField($model,'comedor'); ?>
 		<?php echo $form->error($model,'comedor'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'terraza'); ?>
+		<?php echo $form->labelEx($model,'Tiene Terraza'); ?>
 		<?php echo $form->textField($model,'terraza'); ?>
 		<?php echo $form->error($model,'terraza'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'piso'); ?>
+		<?php echo $form->labelEx($model,'Piso del Edificio'); ?>
 		<?php echo $form->textField($model,'piso'); ?>
 		<?php echo $form->error($model,'piso'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'equipado'); ?>
+		<?php echo $form->labelEx($model,'Esta Equipado'); ?>
 		<?php echo $form->textField($model,'equipado'); ?>
 		<?php echo $form->error($model,'equipado'); ?>
 	</div>
@@ -94,19 +102,19 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'mejoras'); ?>
+		<?php echo $form->labelEx($model,'Tiene Mejoras'); ?>
 		<?php echo $form->textField($model,'mejoras'); ?>
 		<?php echo $form->error($model,'mejoras'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'nivelado'); ?>
+		<?php echo $form->labelEx($model,'Terreno Nivelado'); ?>
 		<?php echo $form->textField($model,'nivelado'); ?>
 		<?php echo $form->error($model,'nivelado'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'agreste'); ?>
+		<?php echo $form->labelEx($model,'Terreno Agreste'); ?>
 		<?php echo $form->textField($model,'agreste'); ?>
 		<?php echo $form->error($model,'agreste'); ?>
 	</div>
@@ -117,14 +125,10 @@
 		<?php echo $form->error($model,'tipo'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idubicacion'); ?>
-		<?php echo $form->textField($model,'idubicacion'); ?>
-		<?php echo $form->error($model,'idubicacion'); ?>
-	</div>
+
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

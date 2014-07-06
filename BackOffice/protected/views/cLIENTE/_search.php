@@ -17,37 +17,37 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'nombre'); ?>
-		<?php echo $form->textField($model,'nombre',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->label($model,'Nombre'); ?>
+		<?php echo $form->textField($model,'nombre',array('size'=>50,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'documento'); ?>
+		<?php echo $form->label($model,'Documento'); ?>
 		<?php echo $form->textField($model,'documento'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'telefono'); ?>
+		<?php echo $form->label($model,'Teléfono'); ?>
 		<?php echo $form->textField($model,'telefono'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'celular'); ?>
+		<?php echo $form->label($model,'Teléfono Celular'); ?>
 		<?php echo $form->textField($model,'celular'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->label($model,'Correo Electrónico'); ?>
+		<?php echo $form->textField($model,'email',array('size'=>50,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'direccion'); ?>
-		<?php echo $form->textField($model,'direccion',array('size'=>20,'maxlength'=>20)); ?>
+		<?php echo $form->label($model,'Dirección'); ?>
+		<?php echo $form->textField($model,'direccion',array('size'=>50,'maxlength'=>150)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Buscar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

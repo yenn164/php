@@ -23,7 +23,12 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div class="logo">
+			<a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/content/images/logo_domus_small.png" alt=""/></a>
+                        <div style="float: right; padding: 15px;">
+                        <h2>Administración</h2>
+                        </div>
+                </div>
 	</div><!-- header -->
 
 	<div id="mainmenu">

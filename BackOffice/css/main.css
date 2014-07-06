@@ -4,7 +4,7 @@ body
 	padding: 0;
 	color: #555;
 	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: #EFEFEF;
+	background: #473b0e;
 }
 
 #page
@@ -12,14 +12,14 @@ body
 	margin-top: 5px;
 	margin-bottom: 5px;
 	background: white;
-	border: 1px solid #C9E0ED;
+	border: 1px solid #A63600;
 }
 
 #header
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	border-top: 3px solid #FF7400;
 }
 
 #content
@@ -49,7 +49,7 @@ body
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+	background:#edc731;
 }
 
 #mainmenu ul
@@ -75,8 +75,8 @@ body
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
-	background-color:#EFF4FA;
+	color: #edc731;
+	background-color:#473b0e;
 	text-decoration:none;
 }
 
@@ -132,7 +132,7 @@ div.view
 {
 	padding: 10px;
 	margin: 10px 0;
-	border: 1px solid #C9E0ED;
+	border: 1px solid #FF5300;
 }
 
 div.breadcrumbs
@@ -161,8 +161,8 @@ div.search-form
 .portlet-decoration
 {
 	padding: 3px 8px;
-	background: #B7D6E7;
-	border-left: 5px solid #6FACCF;
+	background: #edc731;
+	border-left: 5px solid #FF5300;
 }
 
 .portlet-title
@@ -171,7 +171,7 @@ div.search-form
 	font-weight: bold;
 	padding: 0;
 	margin: 0;
-	color: #298dcd;
+	color: #ffffff;
 }
 
 .portlet-content
@@ -179,7 +179,7 @@ div.search-form
 	font-size:0.9em;
 	margin: 0 0 15px 0;
 	padding: 5px 8px;
-	background:#EFFDFF;
+	background:#473b0e;
 }
 
 .portlet-content ul
@@ -211,7 +211,7 @@ div.search-form
 .operations li a
 {
 	font: bold 12px Arial;
-	color: #0066A4;
+	color: #8e771d;
 	display: block;
 	padding: 2px 0 2px 8px;
 	line-height: 15px;
@@ -220,10 +220,10 @@ div.search-form
 
 .operations li a:visited
 {
-	color: #0066A4;
+	color: #ffffff;
 }
 
 .operations li a:hover
 {
-	background: #80CFFF;
+	background: #8e771d;
 }
