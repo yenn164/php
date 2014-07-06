@@ -23,17 +23,23 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<div class="logo">
+			<a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>"><img src="<?php echo Yii::app()->request->baseUrl; ?>/content/images/logo_domus_small.png" alt=""/></a>
+                        <div style="float: right; padding: 15px;">
+                        <h2>Administración</h2>
+                        </div>
+                </div>
 	</div><!-- header -->
 
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+				array('label'=>'Inicio', 'url'=>array('/site/index')),
+                                array('label'=>'Usuarios', 'url'=>array('USER/admin', array("view"=>"admin"))),
+				array('label'=>'Inmuebles', 'url'=>array('INMUEBLE/admin', array("view"=>"admin"))),
+				array('label'=>'Clientes', 'url'=>array('CLIENTE/admin', array("view"=>"admin"))),
+				array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Finalizar Sesión ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	</div><!-- mainmenu -->
@@ -46,11 +52,9 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-        <a href="<?php echo Yii::app()->createUrl('CLIENTE/index', array("view"=>"index")); ?>">INDEX CLIENTE</a>
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+		Copyright &copy; <?php echo date('Y'); ?> por Grupo 07 Taller de PHP - Tecnológo en Informática.<br/>
+		<br/>
 	</div><!-- footer -->
 
 </div><!-- page -->

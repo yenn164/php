@@ -12,17 +12,17 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
+		<?php echo $form->label($model,'Id'); ?>
 		<?php echo $form->textField($model,'id'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'nombre'); ?>
+		<?php echo $form->label($model,'Nombre'); ?>
 		<?php echo $form->textField($model,'nombre',array('size'=>60,'maxlength'=>128)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Buscar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

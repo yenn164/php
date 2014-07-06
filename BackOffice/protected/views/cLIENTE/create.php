@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Clientes'=>array('index'),
-	'Create',
+	'Nuevo Cliente',
 );
 
 $this->menu=array(
-	array('label'=>'List CLIENTE', 'url'=>array('index')),
-	array('label'=>'Manage CLIENTE', 'url'=>array('admin')),
+	array('label'=>'Listar Clientes', 'url'=>array('index')),
+	array('label'=>'Volver', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create CLIENTE</h1>
+<h1>Formulario Nuevo Cliente</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

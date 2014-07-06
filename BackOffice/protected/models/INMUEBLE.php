@@ -88,12 +88,12 @@ class INMUEBLE extends CActiveRecord
 	{
 		return array(
 			'idinmueble' => 'Idinmueble',
-			'fechaPublicacion' => 'Fecha Publicacion',
+			'fechaPublicacion' => 'Fecha Publicación',
 			'gastosComunes' => 'Gastos Comunes',
 			'superEdif' => 'Super Edif',
-			'anioConst' => 'Anio Const',
+			'anioConst' => 'Año Const',
 			'dormitorios' => 'Dormitorios',
-			'banios' => 'Banios',
+			'banios' => 'Baños',
 			'cocina' => 'Cocina',
 			'living' => 'Living',
 			'comedor' => 'Comedor',
