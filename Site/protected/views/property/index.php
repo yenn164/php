@@ -1,5 +1,5 @@
 <?php
-/*$this->pageTitle=Yii::app()->name . ' - Inmuebles';
+$this->pageTitle=Yii::app()->name . ' - Inmuebles';
 $this->breadcrumbs=array(
 	'Inmuebles',
 );
@@ -60,17 +60,16 @@ $this->breadcrumbs=array(
                     <div class="gallery1">
                         <div class="container">
                             <ul id="filters" class="clearfix">
-                                    <li><span class="filter active" data-filter="C A T LC">Todos</span></li>
-                                    <li><span class="filter" data-filter="C">Casa</span></li>
-                                    <li><span class="filter" data-filter="A">Apartamento</span></li>
-                                    <li><span class="filter" data-filter="T">Terreno</span></li>
-                                    <li><span class="filter" data-filter="LC">Local Comerial</span></li>
+                                    <li><span class="filter active" data-filter="casa apartamento terreno lcomercial">Todos</span></li>
+                                    <li><span class="filter" data-filter="casa">Casa</span></li>
+                                    <li><span class="filter" data-filter="apartamento">Apartamento</span></li>
+                                    <li><span class="filter" data-filter="terreno">Terreno</span></li>
+                                    <li><span class="filter" data-filter="lcomercial">Local Comerial</span></li>
                             </ul>
-                            <div id="portfoliolist">
-                                
-                            </div>
+                            <?php $this->widget('PropertiesWidget') ?>
+                            
                     </div>
                 </div>
             </div>
         </div>
-           */
+           
