@@ -63,13 +63,26 @@ class INMUEBLEController extends Controller
 	public function actionCreate()
 	{
 		$model=new INMUEBLE;
-
+                $path_picture = "/var/www/netbeansInmob/BackOffice/protected/images/uploads"."/";//ruta final de la imagen
+               
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['INMUEBLE']))
 		{
 			$model->attributes=$_POST['INMUEBLE'];
+                        
+                        $rnd = rand(0,9999);  // generate random number between 0-9999
+                        $uploadedFile=CUploadedFile::getInstance($model,'picture');
+                        $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+
+                        if(!empty($uploadedFile))  // check if uploaded file is set or not
+                        {
+                            //$uploadedFile->saveAs(Yii::app()->basePath.'/../banner/'.$fileName);  // image will uplode to rootDirectory/banner/
+                            $uploadedFile->saveAs($path_picture.$fileName);
+                            $model->foto= $fileName;
+                        }
+                        
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idinmueble));
 		}
@@ -87,12 +100,29 @@ class INMUEBLEController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+                $path_picture = "/var/www/netbeansInmob/BackOffice/protected/images/uploads"."/";//ruta final de la imagen
+  
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['INMUEBLE']))
 		{
+                        $rnd = rand(0,9999);  // generate random number between 0-9999
+                        $uploadedFile=CUploadedFile::getInstance($model,'picture');
+                        if ($model->foto==''||$model->foto==null) {//si el campo de la imagen está vacio o es null
+                            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+                        }
+                        else{//ya tenemos una imagen registrada
+                            $fileName=$model->foto;
+                        }
+
+                        if(!empty($uploadedFile))  // check if uploaded file is set or not
+                        {
+
+                            $uploadedFile->saveAs($path_picture.$fileName);// image will uplode to rootDirectory/banner/
+                        $model->foto=$fileName;
+
+                        }
 			$model->attributes=$_POST['INMUEBLE'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->idinmueble));
