@@ -9,6 +9,7 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'inmueble-form',
 	'enableAjaxValidation'=>false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -123,6 +124,59 @@
 		<?php echo $form->error($model,'idubicacion'); ?>
 	</div>
 
+	<div class="row">
+                
+   		<?php echo $form->labelEx($model,'picture'); ?>
+		<?php echo CHtml::activeFileField($model, 'picture'); ?>
+		<?php echo $form->error($model,'picture'); ?>
+                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+                <div class="container">
+                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto,"foto",array("width"=>200, 'title'=>$model->foto)); ?>
+                </div>       
+
+                <?php } ?>
+	</div>
+       
+        <div class="row">
+                
+   		<?php echo $form->labelEx($model,'foto2'); ?>
+		<?php echo CHtml::activeFileField($model, 'foto2'); ?>
+		<?php echo $form->error($model,'foto2'); ?>
+                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+                <div class="container">
+                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto2,"foto2",array("width"=>200, 'title'=>$model->foto2)); ?>
+                </div>       
+
+                <?php } ?>
+	</div>
+        <div class="row">
+                
+   		<?php echo $form->labelEx($model,'foto3'); ?>
+		<?php echo CHtml::activeFileField($model, 'foto3'); ?>
+		<?php echo $form->error($model,'foto3'); ?>
+                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+                <div class="container">
+                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto3,"foto3",array("width"=>200, 'title'=>$model->foto3)); ?>
+                </div>       
+
+                <?php } ?>
+	</div>
+        <div class="row">
+                
+   		<?php echo $form->labelEx($model,'foto4'); ?>
+		<?php echo CHtml::activeFileField($model, 'foto4'); ?>
+		<?php echo $form->error($model,'foto4'); ?>
+                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+                <div class="container">
+                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto4,"foto4",array("width"=>200, 'title'=>$model->foto4)); ?>
+                </div>       
+
+                <?php } ?>
+	</div>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
