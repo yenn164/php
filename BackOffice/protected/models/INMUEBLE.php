@@ -57,12 +57,15 @@ class INMUEBLE extends CActiveRecord
 		return array(
 			array('fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo, idubicacion', 'required'),
 			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, idubicacion', 'numerical', 'integerOnly'=>true),
-			array('gastosComunes, superEdif', 'length', 'max'=>6),
+                        array('latitud, longitud', 'numerical'),	
+                        array('gastosComunes, superEdif', 'length', 'max'=>6),
 			array('tipo', 'length', 'max'=>10),
                         array('foto, foto2, foto3, foto4, foto5', 'length', 'max'=>200),
 			array('fechaPublicacion', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
+                        array('departamento, ciudad, barrio, calle', 'length', 'max'=>50),
+			array('descripcion', 'length', 'max'=>100),
 			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo, idubicacion', 'safe', 'on'=>'search'),
                         array('picture', 'file','types'=>'jpg, gif, png'),
 		);
@@ -111,6 +114,15 @@ class INMUEBLE extends CActiveRecord
 			'foto3' => 'Foto3',
 			'foto4' => 'Foto4',
 			'foto5' => 'Foto5',
+                        'departamento' => 'Departamento',
+			'ciudad' => 'Ciudad',
+			'barrio' => 'Barrio',
+			'calle' => 'Calle',
+			'numero' => 'Numero',
+			'apto' => 'Apto',
+			'descripcion' => 'Descripcion',
+			'latitud' => 'Latitud',
+			'longitud' => 'Longitud',
 		);
 	}
 
@@ -149,7 +161,15 @@ class INMUEBLE extends CActiveRecord
 		$criteria->compare('foto3',$this->foto3,true);
 		$criteria->compare('foto4',$this->foto4,true);
 		$criteria->compare('foto5',$this->foto5,true);
-
+                $criteria->compare('departamento',$this->departamento,true);
+		$criteria->compare('ciudad',$this->ciudad,true);
+		$criteria->compare('barrio',$this->barrio,true);
+		$criteria->compare('calle',$this->calle,true);
+		$criteria->compare('numero',$this->numero);
+		$criteria->compare('apto',$this->apto);
+		$criteria->compare('descripcion',$this->descripcion,true);
+		$criteria->compare('latitud',$this->latitud);
+		$criteria->compare('longitud',$this->longitud);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

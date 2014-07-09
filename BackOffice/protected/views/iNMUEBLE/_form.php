@@ -9,89 +9,80 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'inmueble-form',
 	'enableAjaxValidation'=>false,
-        'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
-	<p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-        
-        <div class="row">
-                <a href="<?php echo Yii::app()->createUrl('UBICACION/create', array("view"=>"create")); ?>">Nueva Ubicación</a>
-		<?php echo $form->labelEx($model,'Id Ubicación'); ?>
-		<?php echo $form->textField($model,'idubicacion'); ?>
-		<?php echo $form->error($model,'idubicacion'); ?>
-            
-	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Fecha de Publicación'); ?>
+		<?php echo $form->labelEx($model,'fechaPublicacion'); ?>
 		<?php echo $form->textField($model,'fechaPublicacion'); ?>
-                    <?php echo $form->error($model,'fechaPublicacion'); ?>
+		<?php echo $form->error($model,'fechaPublicacion'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Gastos Comunes'); ?>
+		<?php echo $form->labelEx($model,'gastosComunes'); ?>
 		<?php echo $form->textField($model,'gastosComunes',array('size'=>6,'maxlength'=>6)); ?>
 		<?php echo $form->error($model,'gastosComunes'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Superficie Edificada'); ?>
+		<?php echo $form->labelEx($model,'superEdif'); ?>
 		<?php echo $form->textField($model,'superEdif',array('size'=>6,'maxlength'=>6)); ?>
 		<?php echo $form->error($model,'superEdif'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Año de Construcción'); ?>
+		<?php echo $form->labelEx($model,'anioConst'); ?>
 		<?php echo $form->textField($model,'anioConst'); ?>
 		<?php echo $form->error($model,'anioConst'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Cantidad de Dormitorios'); ?>
+		<?php echo $form->labelEx($model,'dormitorios'); ?>
 		<?php echo $form->textField($model,'dormitorios'); ?>
 		<?php echo $form->error($model,'dormitorios'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Cantidad de Baños'); ?>
+		<?php echo $form->labelEx($model,'banios'); ?>
 		<?php echo $form->textField($model,'banios'); ?>
 		<?php echo $form->error($model,'banios'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Cantidad de Cocinas'); ?>
+		<?php echo $form->labelEx($model,'cocina'); ?>
 		<?php echo $form->textField($model,'cocina'); ?>
 		<?php echo $form->error($model,'cocina'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Tiene Living'); ?>
+		<?php echo $form->labelEx($model,'living'); ?>
 		<?php echo $form->textField($model,'living'); ?>
 		<?php echo $form->error($model,'living'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Tiene Comedor'); ?>
+		<?php echo $form->labelEx($model,'comedor'); ?>
 		<?php echo $form->textField($model,'comedor'); ?>
 		<?php echo $form->error($model,'comedor'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Tiene Terraza'); ?>
+		<?php echo $form->labelEx($model,'terraza'); ?>
 		<?php echo $form->textField($model,'terraza'); ?>
 		<?php echo $form->error($model,'terraza'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Piso del Edificio'); ?>
+		<?php echo $form->labelEx($model,'piso'); ?>
 		<?php echo $form->textField($model,'piso'); ?>
 		<?php echo $form->error($model,'piso'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Esta Equipado'); ?>
+		<?php echo $form->labelEx($model,'equipado'); ?>
 		<?php echo $form->textField($model,'equipado'); ?>
 		<?php echo $form->error($model,'equipado'); ?>
 	</div>
@@ -103,19 +94,19 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Tiene Mejoras'); ?>
+		<?php echo $form->labelEx($model,'mejoras'); ?>
 		<?php echo $form->textField($model,'mejoras'); ?>
 		<?php echo $form->error($model,'mejoras'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Terreno Nivelado'); ?>
+		<?php echo $form->labelEx($model,'nivelado'); ?>
 		<?php echo $form->textField($model,'nivelado'); ?>
 		<?php echo $form->error($model,'nivelado'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'Terreno Agreste'); ?>
+		<?php echo $form->labelEx($model,'agreste'); ?>
 		<?php echo $form->textField($model,'agreste'); ?>
 		<?php echo $form->error($model,'agreste'); ?>
 	</div>
@@ -126,63 +117,98 @@
 		<?php echo $form->error($model,'tipo'); ?>
 	</div>
 
-
+	<div class="row">
+		<?php echo $form->labelEx($model,'idubicacion'); ?>
+		<?php echo $form->textField($model,'idubicacion'); ?>
+		<?php echo $form->error($model,'idubicacion'); ?>
+	</div>
 
 	<div class="row">
-                
-   		<?php echo $form->labelEx($model,'picture'); ?>
-		<?php echo CHtml::activeFileField($model, 'picture'); ?>
-		<?php echo $form->error($model,'picture'); ?>
-                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
-                <div class="container">
-                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto,"foto",array("width"=>200, 'title'=>$model->foto)); ?>
-                </div>       
-
-                <?php } ?>
+		<?php echo $form->labelEx($model,'foto'); ?>
+		<?php echo $form->textField($model,'foto',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->error($model,'foto'); ?>
 	</div>
-       
-        <div class="row">
-                
-   		<?php echo $form->labelEx($model,'foto2'); ?>
-		<?php echo CHtml::activeFileField($model, 'foto2'); ?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'foto2'); ?>
+		<?php echo $form->textField($model,'foto2',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'foto2'); ?>
-                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
-                <div class="container">
-                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto2,"foto2",array("width"=>200, 'title'=>$model->foto2)); ?>
-                </div>       
-
-                <?php } ?>
 	</div>
-        <div class="row">
-                
-   		<?php echo $form->labelEx($model,'foto3'); ?>
-		<?php echo CHtml::activeFileField($model, 'foto3'); ?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'foto3'); ?>
+		<?php echo $form->textField($model,'foto3',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'foto3'); ?>
-                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
-                <div class="container">
-                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto3,"foto3",array("width"=>200, 'title'=>$model->foto3)); ?>
-                </div>       
-
-                <?php } ?>
 	</div>
-        <div class="row">
-                
-   		<?php echo $form->labelEx($model,'foto4'); ?>
-		<?php echo CHtml::activeFileField($model, 'foto4'); ?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'foto4'); ?>
+		<?php echo $form->textField($model,'foto4',array('size'=>60,'maxlength'=>200)); ?>
 		<?php echo $form->error($model,'foto4'); ?>
-                <?php if(!$model->isNewRecord){ //mostramos la imagen?>
-                <div class="container">
-                    <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/'.$model->foto4,"foto4",array("width"=>200, 'title'=>$model->foto4)); ?>
-                </div>       
-
-                <?php } ?>
 	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'foto5'); ?>
+		<?php echo $form->textField($model,'foto5',array('size'=>60,'maxlength'=>200)); ?>
+		<?php echo $form->error($model,'foto5'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'departamento'); ?>
+		<?php echo $form->textField($model,'departamento',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'departamento'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'ciudad'); ?>
+		<?php echo $form->textField($model,'ciudad',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'ciudad'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'barrio'); ?>
+		<?php echo $form->textField($model,'barrio',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'barrio'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'calle'); ?>
+		<?php echo $form->textField($model,'calle',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->error($model,'calle'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'numero'); ?>
+		<?php echo $form->textField($model,'numero'); ?>
+		<?php echo $form->error($model,'numero'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'apto'); ?>
+		<?php echo $form->textField($model,'apto'); ?>
+		<?php echo $form->error($model,'apto'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'descripcion'); ?>
+		<?php echo $form->textField($model,'descripcion',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'descripcion'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'latitud'); ?>
+		<?php echo $form->textField($model,'latitud'); ?>
+		<?php echo $form->error($model,'latitud'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'longitud'); ?>
+		<?php echo $form->textField($model,'longitud'); ?>
+		<?php echo $form->error($model,'longitud'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

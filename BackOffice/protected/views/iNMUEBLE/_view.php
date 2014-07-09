@@ -82,6 +82,62 @@
 	<?php echo CHtml::encode($data->idubicacion); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('foto')); ?>:</b>
+	<?php echo CHtml::encode($data->foto); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('foto2')); ?>:</b>
+	<?php echo CHtml::encode($data->foto2); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('foto3')); ?>:</b>
+	<?php echo CHtml::encode($data->foto3); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('foto4')); ?>:</b>
+	<?php echo CHtml::encode($data->foto4); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('foto5')); ?>:</b>
+	<?php echo CHtml::encode($data->foto5); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('departamento')); ?>:</b>
+	<?php echo CHtml::encode($data->departamento); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('ciudad')); ?>:</b>
+	<?php echo CHtml::encode($data->ciudad); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('barrio')); ?>:</b>
+	<?php echo CHtml::encode($data->barrio); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('calle')); ?>:</b>
+	<?php echo CHtml::encode($data->calle); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('numero')); ?>:</b>
+	<?php echo CHtml::encode($data->numero); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('apto')); ?>:</b>
+	<?php echo CHtml::encode($data->apto); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('descripcion')); ?>:</b>
+	<?php echo CHtml::encode($data->descripcion); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('latitud')); ?>:</b>
+	<?php echo CHtml::encode($data->latitud); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('longitud')); ?>:</b>
+	<?php echo CHtml::encode($data->longitud); ?>
+	<br />
+
 	*/ ?>
 
 </div>

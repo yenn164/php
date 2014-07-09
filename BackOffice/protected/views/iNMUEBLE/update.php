@@ -5,17 +5,17 @@
 $this->breadcrumbs=array(
 	'Inmuebles'=>array('index'),
 	$model->idinmueble=>array('view','id'=>$model->idinmueble),
-	'Actualizar',
+	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'Listar Inmuebles', 'url'=>array('index')),
-	array('label'=>'Nuevo Inmueble', 'url'=>array('create')),
-	array('label'=>'Ver Inmueble', 'url'=>array('view', 'id'=>$model->idinmueble)),
-	array('label'=>'Volver', 'url'=>array('admin')),
+	array('label'=>'List INMUEBLE', 'url'=>array('index')),
+	array('label'=>'Create INMUEBLE', 'url'=>array('create')),
+	array('label'=>'View INMUEBLE', 'url'=>array('view', 'id'=>$model->idinmueble)),
+	array('label'=>'Manage INMUEBLE', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Actualizar INMUEBLE <?php echo $model->idinmueble; ?></h1>
+<h1>Update INMUEBLE <?php echo $model->idinmueble; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
