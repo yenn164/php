@@ -124,5 +124,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
                 'contactEmail'=>'contacto.domusinmo@gmail.com',
+                'urlPropreriesPic'=>'http://localhost/inmobiliaria/BackOffice/protected/images/upload/'
 	),
 );

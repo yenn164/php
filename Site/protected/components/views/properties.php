@@ -3,14 +3,27 @@
 
 <div id="portfoliolist">
     <?php foreach($models as $rows): ?>
-    <?php echo '<td>'.$rows['tipo'].'</td>' ?>
-    <?php echo '<td>'.$rows['descripcion'].'</td>' ?>
-    <br>
-    <?php foreach($rows as $colums): ?>
-    <?php echo '<td>'.$colums.'</td>' ?>
-   
-    <?php endforeach; ?>
-        <BR>
+    <?php $typePropery = "";
+        if($rows['tipo'] == 1){$typePropery = 'casa';}
+        else if($rows['tipo'] == 2){$typePropery = 'apartamento';}
+        else if($rows['tipo'] == 3){$typePropery = 'terreno';}
+        else{$typePropery = 'lcomercial';}
+        $urlpic = Yii::app()->params['urlPropreriesPic'] . $rows['foto']?>
+    
+    <div <?php echo 'class="portfolio '.$typePropery.'" data-cat="'.$typePropery.'"' ?> >
+        <div class="portfolio-wrapper">				
+                <a  href="details.html">
+                        <img src="<?php echo $urlpic?>"  alt="Image 2" />
+                </a>
+                <div class="label">
+                    <div class="label-text">
+                            <a class="text-title"><?php echo 'Publicado: '.$rows['fechaPublicacion'] ?></a>
+                            <span class="text-category"><?php echo $rows['descripcion'] ?></span>
+                    </div>
+                    <div class="label-bg"></div>
+                </div>
+        </div>
+    </div>		
     <?php endforeach; ?>
 </div>
 <?php endif;
