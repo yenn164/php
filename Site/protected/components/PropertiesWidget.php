@@ -23,8 +23,15 @@ class PropertiesWidget extends CWidget {
 		$this->render('admin',array(
 			'model'=>$model,
 		));
-*/                
-        $models = NEW PropertyForm('serch');
+              */  
+        $models = Yii::app()->db->createCommand()
+        ->select('idinmueble, fechaPublicacion, foto, descripcion, tipo')
+        ->from('INMUEBLE')
+        ->queryAll();
+        
+       
+        
+        //$models = NEW PropertyForm('serch');
 
         $this->render('properties', array(
             'models'=>$models   
