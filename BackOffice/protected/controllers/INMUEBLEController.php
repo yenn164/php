@@ -63,7 +63,7 @@ class INMUEBLEController extends Controller
 	public function actionCreate()
 	{
 		$model=new INMUEBLE;
-                $path_picture = "/var/www/netbeansInmob/BackOffice/protected/images/uploads"."/";//ruta final de la imagen
+                $path_picture = "protected/images/uploads"."/";//ruta final de la imagen
                
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -91,7 +91,7 @@ class INMUEBLEController extends Controller
                             $fileName=$model->foto2;
                         }
                         
-                        if(!empty($uploadedFile2))  // check if uploaded file is set or not
+                        if(!empty($uploadedFile))  // check if uploaded file is set or not
                         {
 
                         $uploadedFile->saveAs($path_picture.$fileName);// image will uplode to rootDirectory/banner/
@@ -167,7 +167,7 @@ class INMUEBLEController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-                $path_picture = "/var/www/netbeansInmob/BackOffice/protected/images/uploads"."/";//ruta final de la imagen
+                $path_picture = "protected/images/uploads"."/";//ruta final de la imagen
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -193,7 +193,7 @@ class INMUEBLEController extends Controller
                         }
                         
                         $rnd = rand(0,9999);  // generate random number between 0-9999
-                        $uploadedFile2=CUploadedFile::getInstance($model,'picture2');
+                        $uploadedFile=CUploadedFile::getInstance($model,'picture2');
                         if ($model->foto2==''||$model->foto2==null) {//si el campo de la imagen está vacio o es null
                             $fileName = "{$rnd}-{$uploadedFile2}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
                         }
