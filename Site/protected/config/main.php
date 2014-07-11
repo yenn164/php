@@ -123,7 +123,7 @@ return array(
 	// using Yii::app()->params['paramName']
 	'params'=>array(
 		// this is used in contact page
-		'adminEmail'=>'webmaster@example.com',
                 'contactEmail'=>'contacto.domusinmo@gmail.com',
+                'urlPropreriesPic'=>'http://localhost/inmobiliaria/BackOffice/protected/images/upload/'
 	),
 );
