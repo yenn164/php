@@ -73,6 +73,10 @@ class INMUEBLE extends CActiveRecord
 			array('descripcion', 'length', 'max'=>100),
 			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'safe', 'on'=>'search'),
                         array('picture', 'file','types'=>'jpg, gif, png'),
+                        array('picture2', 'file','types'=>'jpg, gif, png'),
+                        array('picture3', 'file','types'=>'jpg, gif, png'),
+                        array('picture4', 'file','types'=>'jpg, gif, png'),
+                        array('picture5', 'file','types'=>'jpg, gif, png'),
 		);
 	}
 

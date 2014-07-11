@@ -39,7 +39,7 @@ $this->menu=array(
 		'nivelado',
 		'agreste',
 		'tipo',
-		'foto',
+                'foto',
 		'foto2',
 		'foto3',
 		'foto4',

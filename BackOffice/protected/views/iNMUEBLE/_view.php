@@ -77,25 +77,27 @@
 	<?php echo CHtml::encode($data->tipo); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('foto')); ?>:</b>
-	<?php echo CHtml::encode($data->foto); ?>
-	<br />
+         <div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('protected/images/uploads/'.$data->foto,"foto",array("width"=>200, 'title'=>$data->getAttributeLabel('foto'))); ?>
+         </div>
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('foto2')); ?>:</b>
-	<?php echo CHtml::encode($data->foto2); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('foto3')); ?>:</b>
-	<?php echo CHtml::encode($data->foto3); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('foto4')); ?>:</b>
-	<?php echo CHtml::encode($data->foto4); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('foto5')); ?>:</b>
-	<?php echo CHtml::encode($data->foto5); ?>
-	<br />
+        <div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('protected/images/uploads/'.$data->foto2,"foto2",array("width"=>200, 'title'=>$data->getAttributeLabel('foto2'))); ?>
+         </div>
+            <div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('protected/images/uploads/'.$data->foto3,"foto3",array("width"=>200, 'title'=>$data->getAttributeLabel('foto3'))); ?>
+         </div>
+            <div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('protected/images/uploads/'.$data->foto4,"foto4",array("width"=>200, 'title'=>$data->getAttributeLabel('foto4'))); ?>
+         </div>
+            <div class="container">
+            <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+            <?php echo CHtml::image('protected/images/uploads/'.$data->foto5,"foto5",array("width"=>200, 'title'=>$data->getAttributeLabel('foto5'))); ?>
+         </div>
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('departamento')); ?>:</b>
 	<?php echo CHtml::encode($data->departamento); ?>
