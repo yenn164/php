@@ -1,23 +1,25 @@
 <?php
 
 /**
- * This is the model class for table "CLIENTE".
+ * This is the model class for table "TRANSACCION".
  *
- * The followings are the available columns in table 'CLIENTE':
+ * The followings are the available columns in table 'TRANSACCION':
+ * @property integer $idTrans
+ * @property integer $tipoTrans
+ * @property string $fechaTrans
  * @property integer $idCliente
- * @property string $nombre
- * @property integer $documento
- * @property integer $telefono
- * @property integer $celular
- * @property string $email
- * @property string $direccion
+ * @property integer $idInmueble
+ *
+ * The followings are the available model relations:
+ * @property CLIENTE $idCliente0
+ * @property INMUEBLE $idInmueble0
  */
-class CLIENTE extends CActiveRecord
+class TRANSACCION extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return CLIENTE the static model class
+	 * @return TRANSACCION the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -29,7 +31,7 @@ class CLIENTE extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'CLIENTE';
+		return 'TRANSACCION';
 	}
 
 	/**
@@ -40,13 +42,11 @@ class CLIENTE extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre, documento, telefono, celular, email, direccion', 'required'),
-			array('documento, telefono, celular', 'numerical', 'integerOnly'=>true),
-			array('nombre', 'length', 'max'=>30),
-			array('email, direccion', 'length', 'max'=>20),
+			array('tipoTrans, fechaTrans, idCliente, idInmueble', 'required'),
+			array('tipoTrans, idCliente, idInmueble', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idCliente, nombre, documento, telefono, celular, email, direccion', 'safe', 'on'=>'search'),
+			array('idTrans, tipoTrans, fechaTrans, idCliente, idInmueble', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,7 +58,8 @@ class CLIENTE extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		    'tRANSACCIONS' => array(self::HAS_MANY, 'TRANSACCION', 'idInmueble'),
+			'idCliente0' => array(self::BELONGS_TO, 'CLIENTE', 'idCliente'),
+			'idInmueble0' => array(self::BELONGS_TO, 'INMUEBLE', 'idInmueble'),
 		);
 	}
 
@@ -68,13 +69,11 @@ class CLIENTE extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'idTrans' => 'Id Trans',
+			'tipoTrans' => 'Tipo Trans',
+			'fechaTrans' => 'Fecha Trans',
 			'idCliente' => 'Id Cliente',
-			'nombre' => 'Nombre',
-			'documento' => 'Documento',
-			'telefono' => 'Telefono',
-			'celular' => 'Celular',
-			'email' => 'Email',
-			'direccion' => 'Direccion',
+			'idInmueble' => 'Id Inmueble',
 		);
 	}
 
@@ -89,13 +88,11 @@ class CLIENTE extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('idTrans',$this->idTrans);
+		$criteria->compare('tipoTrans',$this->tipoTrans);
+		$criteria->compare('fechaTrans',$this->fechaTrans,true);
 		$criteria->compare('idCliente',$this->idCliente);
-		$criteria->compare('nombre',$this->nombre,true);
-		$criteria->compare('documento',$this->documento);
-		$criteria->compare('telefono',$this->telefono);
-		$criteria->compare('celular',$this->celular);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('direccion',$this->direccion,true);
+		$criteria->compare('idInmueble',$this->idInmueble);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

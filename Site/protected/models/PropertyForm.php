@@ -49,7 +49,7 @@ class PropertyForm extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
                     'idubicacion0' => array(self::BELONGS_TO, 'UBICACION', 'idubicacion'),
-		    'tRANSACIONs' => array(self::HAS_MANY, 'TRANSACION', 'idInmueble'),
+		    'tRANSACCIONS' => array(self::HAS_MANY, 'TRANSACCION', 'idInmueble'),
 		);
 	}
 

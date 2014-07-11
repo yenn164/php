@@ -88,7 +88,7 @@ class INMUEBLE extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		    'tRANSACIONs' => array(self::HAS_MANY, 'TRANSACION', 'idInmueble'),
+		    'tRANSACCIONS' => array(self::HAS_MANY, 'TRANSACCION', 'idInmueble'),
 		);
 	}
 
