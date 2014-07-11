@@ -7,21 +7,21 @@
  */
 
 /**
- * Description of FeaturedWidget
+ * Description of saleFeaturedWidget
  *
  * @author php
  */
-class RentFeaturedWidget  extends CWidget {
+class SaleFeaturedWidget extends CWidget {
 
     public function run() {
         
         $models = Yii::app()->db->createCommand()
-        ->select('i.idinmueble, i.foto, i.descripcion, i.tipo, i.ciudad, i.barrio')
+        ->select('i.idinmueble, i.foto, i.descripcion, i.tipo, i.ciudad, i.barrio, i.precio')
         ->from('INMUEBLE i, TRANSACION t')
-        ->where('i.destacado = 1 and t.idInmueble = i.idinmueble and t.tipoTrans = 2')
+        ->where('i.destacado = 1 and t.idInmueble = i.idinmueble and t.tipoTrans = 1')
         ->queryAll();
         
-        $this->render('rentFeatured', array(
+        $this->render('saleFeatured', array(
             'models'=>$models   
         ));
     }

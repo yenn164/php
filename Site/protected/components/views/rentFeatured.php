@@ -22,20 +22,28 @@
     </script>
 		   <!-- //Owl Carousel Assets -->
 <?php if($models != null): ?>
-<div id="owl-demo" class="owl-carousel">
-    
-    <?php foreach($models as $rows): ?>
-     
-    <?php  $urlpic = Yii::app()->params['urlPropreriesPic'] . $rows['foto'] ?>
-    <div class="item" onclick="location.href='details.html';">
-            <div class="cau_left">
-                    <img class="lazyOwl" data-src="<?php echo $urlpic?>" alt="Lazy Owl Image">
-            </div>
-            <div class="cau_left">
-                    <h4><a href="details.html"><?php echo $rows['ciudad']. ' - '.$rows['barrio']. ' '.$rows['descripcion'] ?></a></h4>
-                    <a href="details.html" class="btn"><?php echo  'Publicado: '.$rows['fechaPublicacion'] ?></a>
-            </div>
+    <div class="main_bg1">
+        <div class="main1">
+            <h2 >Alquileres destacados! </h2>
+        </div>
     </div>
-    <?php endforeach; ?>
-</div>
+                   
+    <div class="wrap">
+        <div id="owl-demo" class="owl-carousel">
+
+            <?php foreach($models as $rows): ?>
+
+            <?php  $urlpic = Yii::app()->params['urlPropreriesPic'] . $rows['foto'] ?>
+            <div class="item" onclick="location.href='details.html';">
+                    <div class="cau_left">
+                            <img class="lazyOwl" data-src="<?php echo $urlpic?>" alt="Lazy Owl Image">
+                    </div>
+                    <div class="cau_left">
+                            <h4><a href="details.html"><?php echo $rows['ciudad']. ' '.$rows['barrio']. ' '.$rows['descripcion'] ?></a></h4>
+                            <a href="details.html" class="btn">Detalle</a>
+                    </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 <?php endif;

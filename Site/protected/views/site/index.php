@@ -35,6 +35,6 @@ $this->pageTitle=Yii::app()->name;
         </nav>
         </div>
 </div>
-<div class="wrap">
-     <?php $this->widget('RentFeaturedWidget') ?>
-</div>
+<?php $this->widget('RentFeaturedWidget');
+
+ $this->widget('SaleFeaturedWidget');
