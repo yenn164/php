@@ -9,6 +9,7 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'inmueble-form',
 	'enableAjaxValidation'=>false,
+        'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
@@ -117,43 +118,7 @@
 		<?php echo $form->error($model,'tipo'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'idubicacion'); ?>
-		<?php echo $form->textField($model,'idubicacion'); ?>
-		<?php echo $form->error($model,'idubicacion'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'foto'); ?>
-		<?php echo $form->textField($model,'foto',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'foto'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'foto2'); ?>
-		<?php echo $form->textField($model,'foto2',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'foto2'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'foto3'); ?>
-		<?php echo $form->textField($model,'foto3',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'foto3'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'foto4'); ?>
-		<?php echo $form->textField($model,'foto4',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'foto4'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'foto5'); ?>
-		<?php echo $form->textField($model,'foto5',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'foto5'); ?>
-	</div>
-
-	<div class="row">
+ 	<div class="row">
 		<?php echo $form->labelEx($model,'departamento'); ?>
 		<?php echo $form->textField($model,'departamento',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'departamento'); ?>
@@ -206,11 +171,75 @@
 		<?php echo $form->textField($model,'longitud'); ?>
 		<?php echo $form->error($model,'longitud'); ?>
 	</div>
+        <?php //echo $form->textFieldRow($model,'fotoprincipal',array('class'=>'span5','maxlength'=>15)); ?>
+        <?php 
+        echo $form->labelEx($model, 'picture');
+        echo $form->fileField($model, 'picture');
+        echo $form->error($model, 'picture');
+        ?>
 
+        <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+        <div class="container">
+          <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+          <?php echo CHtml::image('protected/imagen/upload/'.$model->foto,"foto",array("width"=>200, 'title'=>$model->foto)); ?>
+        </div>
+        <?php } ?>
+
+         <?php 
+        echo $form->labelEx($model, 'picture2');
+        echo $form->fileField($model, 'picture2');
+        echo $form->error($model, 'picture2');
+        ?>
+
+        <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+        <div class="container">
+          <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+          <?php echo CHtml::image('protected/imagen/upload/'.$model->foto,"foto2",array("width"=>200, 'title'=>$model->foto2)); ?>
+        </div>
+        <?php } ?>
+
+        <?php 
+        echo $form->labelEx($model, 'picture3');
+        echo $form->fileField($model, 'picture3');
+        echo $form->error($model, 'picture3');
+        ?>
+
+        <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+        <div class="container">
+          <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+          <?php echo CHtml::image('protected/imagen/upload/'.$model->foto,"foto3",array("width"=>200, 'title'=>$model->foto3)); ?>
+        </div>
+        <?php } ?>
+
+        <?php 
+        echo $form->labelEx($model, 'picture4');
+        echo $form->fileField($model, 'picture4');
+        echo $form->error($model, 'picture4');
+        ?>
+
+        <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+        <div class="container">
+          <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+          <?php echo CHtml::image('protected/imagen/upload/'.$model->foto,"foto4",array("width"=>200, 'title'=>$model->foto4)); ?>
+        </div>
+        <?php } ?>
+        
+        <?php 
+        echo $form->labelEx($model, 'picture5');
+        echo $form->fileField($model, 'picture5');
+        echo $form->error($model, 'picture5');
+        ?>
+
+        <?php if(!$model->isNewRecord){ //mostramos la imagen?>
+        <div class="container">
+          <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
+          <?php echo CHtml::image('protected/imagen/upload/'.$model->foto,"foto5",array("width"=>200, 'title'=>$model->foto5)); ?>
+        </div>
+        <?php } ?>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
-
+        
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->

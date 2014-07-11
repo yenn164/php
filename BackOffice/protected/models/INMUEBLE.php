@@ -22,7 +22,6 @@
  * @property integer $nivelado
  * @property integer $agreste
  * @property string $tipo
- * @property integer $idubicacion
  */
 class INMUEBLE extends CActiveRecord
 {
@@ -33,6 +32,12 @@ class INMUEBLE extends CActiveRecord
 	 */
     
         public $picture;
+        public $picture2;
+        public $picture3;
+        public $picture4; 
+        public $picture5;
+            
+           
         
 	public static function model($className=__CLASS__)
 	{
@@ -55,8 +60,8 @@ class INMUEBLE extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo, idubicacion', 'required'),
-			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, idubicacion', 'numerical', 'integerOnly'=>true),
+			array('fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'required'),
+			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste', 'numerical', 'integerOnly'=>true),
                         array('latitud, longitud', 'numerical'),	
                         array('gastosComunes, superEdif', 'length', 'max'=>6),
 			array('tipo', 'length', 'max'=>10),
@@ -66,7 +71,7 @@ class INMUEBLE extends CActiveRecord
 			// Please remove those attributes that should not be searched.
                         array('departamento, ciudad, barrio, calle', 'length', 'max'=>50),
 			array('descripcion', 'length', 'max'=>100),
-			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo, idubicacion', 'safe', 'on'=>'search'),
+			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'safe', 'on'=>'search'),
                         array('picture', 'file','types'=>'jpg, gif, png'),
 		);
 	}
@@ -79,7 +84,6 @@ class INMUEBLE extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'idubicacion0' => array(self::BELONGS_TO, 'UBICACION', 'idubicacion'),
 		    'tRANSACIONs' => array(self::HAS_MANY, 'TRANSACION', 'idInmueble'),
 		);
 	}
@@ -108,7 +112,6 @@ class INMUEBLE extends CActiveRecord
 			'nivelado' => 'Nivelado',
 			'agreste' => 'Agreste',
 			'tipo' => 'Tipo',
-                    	'idubicacion' => 'Idubicacion',
                         'foto' => 'Foto',
 			'foto2' => 'Foto2',
 			'foto3' => 'Foto3',
@@ -155,7 +158,6 @@ class INMUEBLE extends CActiveRecord
 		$criteria->compare('nivelado',$this->nivelado);
 		$criteria->compare('agreste',$this->agreste);
 		$criteria->compare('tipo',$this->tipo,true);
-		$criteria->compare('idubicacion',$this->idubicacion);
                 $criteria->compare('foto',$this->foto,true);
 		$criteria->compare('foto2',$this->foto2,true);
 		$criteria->compare('foto3',$this->foto3,true);

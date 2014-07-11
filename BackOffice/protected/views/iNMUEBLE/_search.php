@@ -102,11 +102,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'idubicacion'); ?>
-		<?php echo $form->textField($model,'idubicacion'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'foto'); ?>
 		<?php echo $form->textField($model,'foto',array('size'=>60,'maxlength'=>200)); ?>
 	</div>

@@ -33,7 +33,6 @@
 	<?php echo CHtml::encode($data->banios); ?>
 	<br />
 
-	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('cocina')); ?>:</b>
 	<?php echo CHtml::encode($data->cocina); ?>
 	<br />
@@ -76,10 +75,6 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tipo')); ?>:</b>
 	<?php echo CHtml::encode($data->tipo); ?>
-	<br />
-
-	<b><?php echo CHtml::encode($data->getAttributeLabel('idubicacion')); ?>:</b>
-	<?php echo CHtml::encode($data->idubicacion); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('foto')); ?>:</b>
@@ -138,6 +133,5 @@
 	<?php echo CHtml::encode($data->longitud); ?>
 	<br />
 
-	*/ ?>
 
 </div>

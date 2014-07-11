@@ -51,7 +51,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'superEdif',
 		'anioConst',
 		'dormitorios',
-		/*
 		'banios',
 		'cocina',
 		'living',
@@ -64,7 +63,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'nivelado',
 		'agreste',
 		'tipo',
-		'idubicacion',
 		'foto',
 		'foto2',
 		'foto3',
@@ -79,7 +77,6 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'descripcion',
 		'latitud',
 		'longitud',
-		*/
 		array(
 			'class'=>'CButtonColumn',
 		),

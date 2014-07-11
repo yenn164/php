@@ -57,7 +57,6 @@ class PropertyForm extends CActiveRecord
 			'nivelado' => 'Nivelado',
 			'agreste' => 'Agreste',
 			'tipo' => 'Tipo',
-			'idubicacion' => 'Idubicacion',
 		);
 	}
 
@@ -90,7 +89,6 @@ class PropertyForm extends CActiveRecord
 		$criteria->compare('nivelado',$this->nivelado);
 		$criteria->compare('agreste',$this->agreste);
 		$criteria->compare('tipo',$this->tipo,true);
-		$criteria->compare('idubicacion',$this->idubicacion);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
