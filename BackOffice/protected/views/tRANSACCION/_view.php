@@ -17,12 +17,16 @@
 	<?php echo CHtml::encode($data->fechaTrans); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('idCliente')); ?>:</b>
-	<?php echo CHtml::encode($data->idCliente); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('idClientePropietario')); ?>:</b>
+	<?php echo CHtml::encode($data->idClientePropietario); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('idInmueble')); ?>:</b>
 	<?php echo CHtml::encode($data->idInmueble); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('idClienteInteres')); ?>:</b>
+	<?php echo CHtml::encode($data->idClienteInteres); ?>
 	<br />
 
 
