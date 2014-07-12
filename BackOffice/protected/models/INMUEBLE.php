@@ -72,11 +72,11 @@ class INMUEBLE extends CActiveRecord
                         array('departamento, ciudad, barrio, calle', 'length', 'max'=>50),
 			array('descripcion', 'length', 'max'=>100),
 			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'safe', 'on'=>'search'),
-                        array('picture', 'file','types'=>'jpg, gif, png'),
-                        array('picture2', 'file','types'=>'jpg, gif, png'),
-                        array('picture3', 'file','types'=>'jpg, gif, png'),
-                        array('picture4', 'file','types'=>'jpg, gif, png'),
-                        array('picture5', 'file','types'=>'jpg, gif, png'),
+                        array('picture', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
+                        array('picture2', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
+                        array('picture3', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
+                        array('picture4', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
+                        array('picture5', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
 		);
 	}
 
@@ -130,6 +130,9 @@ class INMUEBLE extends CActiveRecord
 			'descripcion' => 'Descripcion',
 			'latitud' => 'Latitud',
 			'longitud' => 'Longitud',
+                        'precio' => 'Precio',
+			'destacado' => 'Destacado',
+			'moneda' => 'Moneda',
 		);
 	}
 
@@ -176,6 +179,9 @@ class INMUEBLE extends CActiveRecord
 		$criteria->compare('descripcion',$this->descripcion,true);
 		$criteria->compare('latitud',$this->latitud);
 		$criteria->compare('longitud',$this->longitud);
+                $criteria->compare('precio',$this->precio);
+		$criteria->compare('destacado',$this->destacado);
+		$criteria->compare('moneda',$this->moneda);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

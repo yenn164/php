@@ -165,11 +165,26 @@
 		<?php echo $form->textField($model,'longitud'); ?>
 		<?php echo $form->error($model,'longitud'); ?>
 	</div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'precio'); ?>
+		<?php echo $form->textField($model,'precio'); ?>
+		<?php echo $form->error($model,'precio'); ?>
+	</div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'destacado'); ?>
+		<?php echo $form->textField($model,'destacado'); ?>
+		<?php echo $form->error($model,'destacado'); ?>
+	</div>
+        <div class="row">
+		<?php echo $form->labelEx($model,'moneda'); ?>
+		<?php echo $form->textField($model,'moneda'); ?>
+		<?php echo $form->error($model,'moneda'); ?>
+	</div>
         
 	<div class="row">
-                <?php  echo $form->labelEx($model, 'foto'); ?>
-		<?php echo $form->fileField($model, 'foto'); ?>
-		<?php echo $form->error($model, 'foto'); ?>
+                <?php  echo $form->labelEx($model, 'picture'); ?>
+		<?php echo $form->fileField($model, 'picture'); ?>
+		<?php echo $form->error($model, 'picture'); ?>
         </div>
         <?php if(!$model->isNewRecord){ //mostramos la imagen?>
         <div class="container">

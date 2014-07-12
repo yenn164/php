@@ -171,6 +171,21 @@
 		<?php echo $form->textField($model,'longitud'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'precio'); ?>
+		<?php echo $form->textField($model,'precio'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'destacado'); ?>
+		<?php echo $form->textField($model,'destacado'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'moneda'); ?>
+		<?php echo $form->textField($model,'moneda'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

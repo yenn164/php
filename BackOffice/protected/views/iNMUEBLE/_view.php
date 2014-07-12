@@ -134,6 +134,18 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('longitud')); ?>:</b>
 	<?php echo CHtml::encode($data->longitud); ?>
 	<br />
+        
+        <b><?php echo CHtml::encode($data->getAttributeLabel('precio')); ?>:</b>
+	<?php echo CHtml::encode($data->precio); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('destacado')); ?>:</b>
+	<?php echo CHtml::encode($data->destacado); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('moneda')); ?>:</b>
+	<?php echo CHtml::encode($data->moneda); ?>
+	<br />
 
 
 </div>

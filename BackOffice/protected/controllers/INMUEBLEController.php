@@ -83,9 +83,9 @@ class INMUEBLEController extends Controller
                         }
                         
                         $rnd = rand(0,9999);  // generate random number between 0-9999
-                        $uploadedFile2=CUploadedFile::getInstance($model,'picture2');
+                        $uploadedFile=CUploadedFile::getInstance($model,'picture2');
                         if ($model->foto2==''||$model->foto2==null) {//si el campo de la imagen está vacio o es null
-                            $fileName = "{$rnd}-{$uploadedFile2}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+                            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
                         }
                         else{//ya tenemos una imagen registrada
                             $fileName=$model->foto2;
@@ -195,13 +195,13 @@ class INMUEBLEController extends Controller
                         $rnd = rand(0,9999);  // generate random number between 0-9999
                         $uploadedFile=CUploadedFile::getInstance($model,'picture2');
                         if ($model->foto2==''||$model->foto2==null) {//si el campo de la imagen está vacio o es null
-                            $fileName = "{$rnd}-{$uploadedFile2}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
+                            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name or puedes usar: $fileName=$uploadedFile->getName();
                         }
                         else{//ya tenemos una imagen registrada
                             $fileName=$model->foto2;
                         }
                         
-                        if(!empty($uploadedFile2))  // check if uploaded file is set or not
+                        if(!empty($uploadedFile))  // check if uploaded file is set or not
                         {
 
                         $uploadedFile->saveAs($path_picture.$fileName);// image will uplode to rootDirectory/banner/
