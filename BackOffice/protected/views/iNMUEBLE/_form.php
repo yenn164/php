@@ -159,29 +159,22 @@
 		<?php echo $form->textField($model,'descripcion',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'descripcion'); ?>
 	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'latitud'); ?>
-		<?php echo $form->textField($model,'latitud'); ?>
-		<?php echo $form->error($model,'latitud'); ?>
-	</div>
-
+	
 	<div class="row">
 		<?php echo $form->labelEx($model,'longitud'); ?>
 		<?php echo $form->textField($model,'longitud'); ?>
 		<?php echo $form->error($model,'longitud'); ?>
 	</div>
-        <?php //echo $form->textFieldRow($model,'fotoprincipal',array('class'=>'span5','maxlength'=>15)); ?>
-        <?php 
-        echo $form->labelEx($model, 'picture');
-        echo $form->fileField($model, 'picture');
-        echo $form->error($model, 'picture');
-        ?>
-
+        
+	<div class="row">
+                <?php  echo $form->labelEx($model, 'foto'); ?>
+		<?php echo $form->fileField($model, 'foto'); ?>
+		<?php echo $form->error($model, 'foto'); ?>
+        </div>
         <?php if(!$model->isNewRecord){ //mostramos la imagen?>
         <div class="container">
           <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-          <?php echo CHtml::image('protected/images/uploads/'.$model->foto,"foto1",array("width"=>200, 'title'=>$model->getAttributeLabel('foto'))); ?>
+          <?php echo CHtml::image('protected/images/uploads/'.$model->foto,"foto",array("width"=>200, 'title'=>$model->getAttributeLabel('foto'))); ?>
         </div>
         <?php } ?>
         <?php 
