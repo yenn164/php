@@ -11,30 +11,6 @@
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/style.css" rel="stylesheet" type="text/css" media="all"/>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/jquery.min.js"></script>
         
-        <!-- Owl Carousel Assets 
-		<link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
-		     <!-- Owl Carousel Assets -->
-		    <!-- Prettify 
-		    <script src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/owl.carousel.js"></script>
-                     <script>
-		    $(document).ready(function() {
-		
-		      $("#owl-demo").owlCarousel({
-		        items : 4,
-		        lazyLoad : true,
-		        autoPlay : true,
-		        navigation : true,
-			    navigationText : ["",""],
-			    rewindNav : false,
-			    scrollPerPage : false,
-			    pagination : false,
-    			paginationNumbers: false,
-		      });
-		
-		    });
-		    </script>
-		   <!-- //Owl Carousel Assets -->
-                   <!-- start top_js_button -->
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/move-top.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/easing.js"></script>
 		   <script type="text/javascript">

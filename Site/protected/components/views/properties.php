@@ -12,7 +12,7 @@
     
     <div <?php echo 'class="portfolio '.$typePropery.'" data-cat="'.$typePropery.'"' ?> >
         <div class="portfolio-wrapper">				
-                <a  href="details.html">
+                <a  href="<?php echo Yii::app()->createUrl('property/OpenFile', array("id"=>$rows['idinmueble'])); ?>">
                         <img src="<?php echo $urlpic?>"  alt="Image 2" />
                 </a>
                 <div class="label">

@@ -32,8 +32,19 @@ class PropertyController extends Controller {
             $this->render('index');
     }
     
- 
-    
+    public function actionOpenFile($id)
+    {   
+        if($id != null && $id > 0)
+        {
+            $model = Yii::app()->db->createCommand()
+           ->select('*')
+           ->from('INMUEBLE')
+           ->where('idinmueble ='.$id)
+           ->queryRow();
+            
+            $this->render('file',array('model'=>$model));
+        }    
+    }
 }
 
 

@@ -67,7 +67,7 @@ body {
 	width: 84.33333%;
 	line-height: 1.5em;
 	position: relative;
-	font-size: 0.8725em;
+	font-size: 1.8725em;
 	text-transform: capitalize;
 }
 .h_search input[type="submit"]{
@@ -1027,7 +1027,6 @@ p.para{
 	background: #FF8E00;
 }
 .single-nav li {
-	list-style-image: url(../images/marker1.gif);
 	border-bottom: 1px dotted #E8E8E8;
 }
 .single-nav li a {

@@ -21,7 +21,7 @@
                     <div class="grids_of_3">
                 <?php endif;?>
                     <div class="grid1_of_3">
-                            <a href="details.html">
+                            <a href="<?php echo Yii::app()->createUrl('property/OpenFile', array("id"=>$rows['idinmueble'])); ?>">
                                     <img src="<?php echo $urlpic?>" alt=""/>
                                     <h3><?php echo $rows['ciudad']. ' '.$rows['barrio']. ' '.$rows['descripcion'] ?></h3>
                                     <div class="price">
