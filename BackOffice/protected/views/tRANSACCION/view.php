@@ -24,7 +24,8 @@ $this->menu=array(
 		'idTrans',
 		'tipoTrans',
 		'fechaTrans',
-		'idCliente',
+		'idClientePropietario',
 		'idInmueble',
+		'idClienteInteres',
 	),
 )); ?>

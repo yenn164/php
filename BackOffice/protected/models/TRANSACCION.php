@@ -7,12 +7,13 @@
  * @property integer $idTrans
  * @property integer $tipoTrans
  * @property string $fechaTrans
- * @property integer $idCliente
+ * @property integer $idClientePropietario
  * @property integer $idInmueble
+ * @property integer $idClienteInteres
  *
  * The followings are the available model relations:
- * @property CLIENTE $idCliente0
- * @property INMUEBLE $idInmueble0
+ * @property CLIENTE $idClienteInteres0
+ * @property CLIENTE $idClientePropietario0
  */
 class TRANSACCION extends CActiveRecord
 {
@@ -42,11 +43,11 @@ class TRANSACCION extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tipoTrans, fechaTrans, idCliente, idInmueble', 'required'),
-			array('tipoTrans, idCliente, idInmueble', 'numerical', 'integerOnly'=>true),
+			array('tipoTrans, fechaTrans, idClientePropietario, idInmueble, idClienteInteres', 'required'),
+			array('tipoTrans, idClientePropietario, idInmueble, idClienteInteres', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('idTrans, tipoTrans, fechaTrans, idCliente, idInmueble', 'safe', 'on'=>'search'),
+			array('idTrans, tipoTrans, fechaTrans, idClientePropietario, idInmueble, idClienteInteres', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,8 +59,8 @@ class TRANSACCION extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idCliente0' => array(self::BELONGS_TO, 'CLIENTE', 'idCliente'),
-			'idInmueble0' => array(self::BELONGS_TO, 'INMUEBLE', 'idInmueble'),
+			'idClienteInteres0' => array(self::BELONGS_TO, 'CLIENTE', 'idClienteInteres'),
+			'idClientePropietario0' => array(self::BELONGS_TO, 'CLIENTE', 'idClientePropietario'),
 		);
 	}
 
@@ -72,8 +73,9 @@ class TRANSACCION extends CActiveRecord
 			'idTrans' => 'Id Trans',
 			'tipoTrans' => 'Tipo Trans',
 			'fechaTrans' => 'Fecha Trans',
-			'idCliente' => 'Id Cliente',
+			'idClientePropietario' => 'Id Cliente Propietario',
 			'idInmueble' => 'Id Inmueble',
+			'idClienteInteres' => 'Id Cliente Interes',
 		);
 	}
 
@@ -91,8 +93,9 @@ class TRANSACCION extends CActiveRecord
 		$criteria->compare('idTrans',$this->idTrans);
 		$criteria->compare('tipoTrans',$this->tipoTrans);
 		$criteria->compare('fechaTrans',$this->fechaTrans,true);
-		$criteria->compare('idCliente',$this->idCliente);
+		$criteria->compare('idClientePropietario',$this->idClientePropietario);
 		$criteria->compare('idInmueble',$this->idInmueble);
+		$criteria->compare('idClienteInteres',$this->idClienteInteres);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

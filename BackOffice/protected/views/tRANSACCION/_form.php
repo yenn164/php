@@ -28,15 +28,21 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'idCliente'); ?>
-		<?php echo $form->textField($model,'idCliente'); ?>
-		<?php echo $form->error($model,'idCliente'); ?>
+		<?php echo $form->labelEx($model,'idClientePropietario'); ?>
+		<?php echo $form->textField($model,'idClientePropietario'); ?>
+		<?php echo $form->error($model,'idClientePropietario'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'idInmueble'); ?>
 		<?php echo $form->textField($model,'idInmueble'); ?>
 		<?php echo $form->error($model,'idInmueble'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'idClienteInteres'); ?>
+		<?php echo $form->textField($model,'idClienteInteres'); ?>
+		<?php echo $form->error($model,'idClienteInteres'); ?>
 	</div>
 
 	<div class="row buttons">

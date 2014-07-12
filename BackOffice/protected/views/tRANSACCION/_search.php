@@ -27,13 +27,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'idCliente'); ?>
-		<?php echo $form->textField($model,'idCliente'); ?>
+		<?php echo $form->label($model,'idClientePropietario'); ?>
+		<?php echo $form->textField($model,'idClientePropietario'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'idInmueble'); ?>
 		<?php echo $form->textField($model,'idInmueble'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'idClienteInteres'); ?>
+		<?php echo $form->textField($model,'idClienteInteres'); ?>
 	</div>
 
 	<div class="row buttons">

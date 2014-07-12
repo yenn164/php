@@ -11,6 +11,10 @@
  * @property integer $celular
  * @property string $email
  * @property string $direccion
+ *
+ * The followings are the available model relations:
+ * @property TRANSACCION[] $tRANSACCIONs
+ * @property TRANSACCION[] $tRANSACCIONs1
  */
 class CLIENTE extends CActiveRecord
 {
@@ -58,7 +62,8 @@ class CLIENTE extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-		    'tRANSACCIONS' => array(self::HAS_MANY, 'TRANSACCION', 'idInmueble'),
+			'tRANSACCIONs' => array(self::HAS_MANY, 'TRANSACCION', 'idClienteInteres'),
+			'tRANSACCIONs1' => array(self::HAS_MANY, 'TRANSACCION', 'idClientePropietario'),
 		);
 	}
 
