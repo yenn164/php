@@ -756,3 +756,1432 @@ Stack trace:
 REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/admin&0%5Bview%5D=admin
 HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=CLIENTE/admin&0%5Bview%5D=admin
 ---
+2014/07/05 22:41:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/admin&0%5Bview%5D=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/login
+---
+2014/07/05 22:41:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('CLIENTE/admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=CLIENTE/admin&0%5Bview%5D=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=USER/admin&0%5Bview%5D=admin
+---
+2014/07/05 22:41:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('INMUEBLE/admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=INMUEBLE/admin&0%5Bview%5D=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=CLIENTE/admin&0%5Bview%5D=admin
+---
+2014/07/05 22:45:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('INMUEBLE/admin')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=INMUEBLE/admin&0%5Bview%5D=admin
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=USER/admin&0%5Bview%5D=admin
+---
+2014/07/05 22:50:04 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /var/www/yii_framework/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/yii_framework/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('USER/index')
+#9 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#11 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=USER/index&0%5Bview%5D=index
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=site/login
+---
+2014/07/05 23:17:41 [error] [php] Undefined index: inmueble_tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:135)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (135)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:18:48 [error] [php] Undefined index: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:135)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (135)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:22:52 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:23:17 [error] [php] Undefined index: tipo_in (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:136)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (136)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:23:35 [error] [php] Undefined index: tipo_in (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:136)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (136)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:26:14 [error] [php] Undefined index: tipo_in (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:133)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (133)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:26:39 [error] [php] Undefined index: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:133)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (133)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:29:37 [error] [php] Undefined index: Tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:133)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (133)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:30:17 [error] [php] Undefined index: tipo_in (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:133)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (133)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:31:29 [error] [php] Undefined index: formSubmit (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:133)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (133)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:32:53 [error] [php] Undefined index: formSubmit (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:133)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (133)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:34:18 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:34:37 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:35:24 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:42:49 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:43:15 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:46:53 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/05 23:46:53 [error] [php] Undefined variable: select (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:47:24 [error] [php] Undefined variable: select (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:48:35 [error] [php] Undefined variable: tipo_in (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/05 23:49:02 [error] [php] Undefined variable: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/06 00:00:56 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/06 00:01:44 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/06 00:01:50 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/06 00:03:30 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/06 00:04:29 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.primaryKey" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/web/helpers/CHtml.php(2051): CComponent->__get('primaryKey')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(790): CHtml::listOptions(Object(CActiveForm), Array, Array)
+#2 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(125): CHtml::dropDownList('tipo', Object(CActiveForm), Array)
+#3 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#4 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#6 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#7 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#8 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#10 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): CController->render('create', Array)
+#12 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#13 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#23 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#25 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/index
+---
+2014/07/06 00:07:19 [warning] [application] Failed to set unsafe attribute "fechaPublicacion" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/06 00:10:45 [error] [php] Undefined index: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:126)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (126)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/06 00:12:29 [error] [php] Undefined index: valor (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:126)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (126)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/06 00:12:57 [error] [php] Undefined index: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:126)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (126)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/06 00:14:15 [error] [php] Undefined variable: valor (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/06 00:14:48 [error] [php] Undefined variable: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/06 00:16:59 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.primaryKey" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/web/helpers/CHtml.php(2051): CComponent->__get('primaryKey')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(790): CHtml::listOptions(Object(CActiveForm), Array, Array)
+#2 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(125): CHtml::dropDownList('tipo', Object(CActiveForm), Array)
+#3 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#4 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#5 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#6 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#7 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#8 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#9 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#10 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#11 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): CController->render('create', Array)
+#12 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#13 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#14 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#15 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#16 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#17 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#18 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#19 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#20 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#22 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#23 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#24 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#25 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/view&id=8
+---
+2014/07/06 00:17:26 [error] [php] Undefined variable: tipo (/var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php:125)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#1 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): INMUEBLEController->renderPartial()
+#2 /var/www/yii_framework/framework/web/CBaseController.php(126): require()
+#3 /var/www/yii_framework/framework/web/CBaseController.php(95): INMUEBLEController->renderInternal()
+#4 /var/www/yii_framework/framework/web/CController.php(869): INMUEBLEController->renderFile()
+#5 /var/www/yii_framework/framework/web/CController.php(782): INMUEBLEController->renderPartial()
+#6 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): INMUEBLEController->render()
+#7 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#8 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#10 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#12 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#13 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#14 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#15 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#16 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#17 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#18 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#19 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php (125)
+in /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php (18)
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (79)
+2014/07/10 18:54:31 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.foto" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(143): CComponent->__get('foto')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('foto')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(INMUEBLE), 'foto')
+#3 /var/www/yii_framework/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(INMUEBLE), 'foto', Array)
+#4 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(INMUEBLE), 'foto', Array)
+#5 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(128): CActiveForm->textField(Object(INMUEBLE), 'foto', Array)
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#9 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#11 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#13 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(79): CController->render('create', Array)
+#15 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#16 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#26 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#28 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/index&0%5Bview%5D=index
+---
+2014/07/10 19:18:12 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 19:18:12 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 19:18:43 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 19:18:43 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 19:37:16 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 19:37:16 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:05:23 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:05:23 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:05:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29).
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:05:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29)' in /var/www/yii_framework/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(73): CActiveRecord->save()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#14 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+---
+2014/07/10 20:07:42 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:07:42 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:07:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29).
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:07:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29)' in /var/www/yii_framework/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(73): CActiveRecord->save()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#14 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+---
+2014/07/10 20:29:09 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:29:09 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:29:09 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:36:19 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:36:19 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:36:19 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:36:19 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.image" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:173
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(159): CComponent->__set('image', NULL)
+#1 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(73): CActiveRecord->__set('image', NULL)
+#2 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#3 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#10 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#13 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#15 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+---
+2014/07/10 20:41:41 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:41:41 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:41:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29).
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:41:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29)' in /var/www/yii_framework/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(73): CActiveRecord->save()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#14 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+---
+2014/07/10 20:48:10 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:48:10 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (72)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:48:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29).
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 20:48:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`testdrive`.`INMUEBLE`, CONSTRAINT `INMUEBLE_ibfk_1` FOREIGN KEY (`idubicacion`) REFERENCES `UBICACION` (`idubicacion`)). The SQL statement executed was: INSERT INTO `INMUEBLE` (`fechaPublicacion`, `gastosComunes`, `superEdif`, `anioConst`, `dormitorios`, `banios`, `cocina`, `living`, `comedor`, `terraza`, `piso`, `equipado`, `padron`, `mejoras`, `nivelado`, `agreste`, `tipo`, `idubicacion`, `foto`, `foto2`, `foto3`, `foto4`, `foto5`, `departamento`, `ciudad`, `barrio`, `calle`, `descripcion`, `latitud`, `longitud`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8, :yp9, :yp10, :yp11, :yp12, :yp13, :yp14, :yp15, :yp16, :yp17, :yp18, :yp19, :yp20, :yp21, :yp22, :yp23, :yp24, :yp25, :yp26, :yp27, :yp28, :yp29)' in /var/www/yii_framework/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(73): CActiveRecord->save()
+#3 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#4 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#11 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#13 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#14 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#16 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+---
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:33:16 [error] [php] move_uploaded_file(/var/www/netbeansInmob/BackOffice/protected/images/uploads/9455-1-1.jpg): failed to open stream: No such file or directory (/var/www/yii_framework/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#1 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#3 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#6 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#9 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#10 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (81)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:54:47 [error] [php] move_uploaded_file(/var/www/netbeansInmob/BackOffice/protected/images/uploads/3221-1-1.jpg): failed to open stream: No such file or directory (/var/www/yii_framework/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#1 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#3 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#6 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#9 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#10 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (81)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/10 22:57:45 [error] [php] move_uploaded_file(/var/www/netbeansInmob/BackOffice/protected/images/uploads/5109-1-1.jpg): failed to open stream: No such file or directory (/var/www/yii_framework/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#1 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#3 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#6 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#9 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#10 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (81)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 15:26:12 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.moneda" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(143): CComponent->__get('moneda')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('moneda')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(1565): CHtml::resolveValue(Object(INMUEBLE), 'moneda')
+#3 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(763): CHtml::activeDropDownList(Object(INMUEBLE), 'moneda', Array, Array)
+#4 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(77): CActiveForm->dropDownList(Object(INMUEBLE), 'moneda', Array)
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#7 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#8 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#11 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(159): CController->render('create', Array)
+#14 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#15 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#25 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/index&0%5Bview%5D=index
+---
+2014/07/13 15:31:53 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.moneda" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(143): CComponent->__get('moneda')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('moneda')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(1565): CHtml::resolveValue(Object(INMUEBLE), 'moneda')
+#3 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(763): CHtml::activeDropDownList(Object(INMUEBLE), 'moneda', Array, Array)
+#4 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(77): CActiveForm->dropDownList(Object(INMUEBLE), 'moneda', Array)
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#7 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#8 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#11 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(159): CController->render('create', Array)
+#14 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#15 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#25 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/index&0%5Bview%5D=index
+---
+2014/07/13 15:32:30 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.moneda" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(143): CComponent->__get('moneda')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('moneda')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(1565): CHtml::resolveValue(Object(INMUEBLE), 'moneda')
+#3 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(763): CHtml::activeDropDownList(Object(INMUEBLE), 'moneda', Array, Array)
+#4 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(77): CActiveForm->dropDownList(Object(INMUEBLE), 'moneda', Array)
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#7 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#8 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#11 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(159): CController->render('create', Array)
+#14 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#15 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#25 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/index&0%5Bview%5D=index
+---
+2014/07/13 16:01:13 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.precio" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(143): CComponent->__get('precio')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('precio')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(INMUEBLE), 'precio')
+#3 /var/www/yii_framework/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(INMUEBLE), 'precio', Array)
+#4 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(INMUEBLE), 'precio', Array)
+#5 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(80): CActiveForm->textField(Object(INMUEBLE), 'precio')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#7 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#8 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#9 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#11 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#13 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#14 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(159): CController->render('create', Array)
+#15 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#16 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#23 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#25 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#26 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#28 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/index&0%5Bview%5D=index
+---
+2014/07/13 16:03:37 [error] [exception.CException] exception 'CException' with message 'Property "INMUEBLE.destacado" is not defined.' in /var/www/yii_framework/framework/base/CComponent.php:130
+Stack trace:
+#0 /var/www/yii_framework/framework/db/ar/CActiveRecord.php(143): CComponent->__get('destacado')
+#1 /var/www/yii_framework/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('destacado')
+#2 /var/www/yii_framework/framework/web/helpers/CHtml.php(1506): CHtml::resolveValue(Object(INMUEBLE), 'destacado')
+#3 /var/www/yii_framework/framework/web/widgets/CActiveForm.php(747): CHtml::activeCheckBox(Object(INMUEBLE), 'destacado', Array)
+#4 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/_form.php(86): CActiveForm->checkBox(Object(INMUEBLE), 'destacado', Array)
+#5 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#6 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#7 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#8 /var/www/inmobiliaria/BackOffice/protected/views/iNMUEBLE/create.php(18): CController->renderPartial('_form', Array)
+#9 /var/www/yii_framework/framework/web/CBaseController.php(126): require('/var/www/inmobi...')
+#10 /var/www/yii_framework/framework/web/CBaseController.php(95): CBaseController->renderInternal('/var/www/inmobi...', Array, true)
+#11 /var/www/yii_framework/framework/web/CController.php(869): CBaseController->renderFile('/var/www/inmobi...', Array, true)
+#12 /var/www/yii_framework/framework/web/CController.php(782): CController->renderPartial('create', Array, true)
+#13 /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php(159): CController->render('create', Array)
+#14 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#15 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#17 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /var/www/yii_framework/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#19 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#21 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#22 /var/www/yii_framework/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /var/www/yii_framework/framework/web/CWebApplication.php(282): CController->run('create')
+#24 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController('iNMUEBLE/create')
+#25 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#26 /var/www/inmobiliaria/BackOffice/index.php(14): CApplication->run()
+#27 {main}
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+HTTP_REFERER=http://localhost/inmobiliaria/BackOffice/index.php?r=INMUEBLE/index&0%5Bview%5D=index
+---
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:08:41 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 16:23:07 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:04:38 [error] [php] move_uploaded_file(protected/images/uploads/9721-5-1.jpg): failed to open stream: No such file or directory (/var/www/yii_framework/framework/web/CUploadedFile.php:196)
+Stack trace:
+#0 /var/www/yii_framework/framework/web/actions/CInlineAction.php(49): INMUEBLEController->actionCreate()
+#1 /var/www/yii_framework/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /var/www/yii_framework/framework/web/filters/CFilterChain.php(133): INMUEBLEController->runAction()
+#3 /var/www/yii_framework/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /var/www/yii_framework/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /var/www/yii_framework/framework/web/filters/CInlineFilter.php(58): INMUEBLEController->filterAccessControl()
+#6 /var/www/yii_framework/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /var/www/yii_framework/framework/web/CController.php(291): CFilterChain->run()
+#8 /var/www/yii_framework/framework/web/CController.php(265): INMUEBLEController->runActionWithFilters()
+#9 /var/www/yii_framework/framework/web/CWebApplication.php(282): INMUEBLEController->run()
+#10 /var/www/yii_framework/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /var/www/yii_framework/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#12 /var/www/inmobiliaria/BackOffice/index.php(14): CWebApplication->run()
+REQUEST_URI=/inmobiliaria/BackOffice/index.php?r=iNMUEBLE/create
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (81)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:08:06 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 17:12:34 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:10:14 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "moneda" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "precio" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "destacado" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "numero" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "apto" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "picture" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "picture2" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "picture3" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "picture4" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)
+2014/07/13 18:13:41 [warning] [application] Failed to set unsafe attribute "picture5" of "INMUEBLE".
+in /var/www/inmobiliaria/BackOffice/protected/controllers/INMUEBLEController.php (73)
+in /var/www/inmobiliaria/BackOffice/index.php (14)

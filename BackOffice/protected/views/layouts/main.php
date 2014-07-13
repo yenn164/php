@@ -35,9 +35,9 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Inicio', 'url'=>array('/site/index')),
-                                array('label'=>'Usuarios', 'url'=>array('USER/admin', array("view"=>"admin"))),
-				array('label'=>'Inmuebles', 'url'=>array('INMUEBLE/admin', array("view"=>"admin"))),
-				array('label'=>'Clientes', 'url'=>array('CLIENTE/admin', array("view"=>"admin"))),
+                                array('label'=>'Usuarios', 'url'=>array('USER/index', array("view"=>"index"))),
+				array('label'=>'Inmuebles', 'url'=>array('INMUEBLE/index', array("view"=>"index"))),
+				array('label'=>'Clientes', 'url'=>array('CLIENTE/index', array("view"=>"index"))),
 				array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Finalizar Sesión ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

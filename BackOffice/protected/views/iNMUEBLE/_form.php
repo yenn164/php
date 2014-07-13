@@ -48,7 +48,7 @@
         }
         ;
     </script>
-    <p class="note">Fields with <span class="required">*</span> are required.</p>
+    <p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
     <?php echo $form->errorSummary($model); ?>
 
@@ -251,7 +251,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto, "foto", array("width" => 200, 'title' => $model->getAttributeLabel('foto'))); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto, "foto", array("width" => 200, 'title' => $model->getAttributeLabel('foto'))); ?>
                 </div>
             <?php } ?>
             <?php
@@ -262,7 +262,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto2, "foto2", array("width" => 200, 'title' => $model->getAttributeLabel('foto2'))); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto2, "foto2", array("width" => 200, 'title' => $model->getAttributeLabel('foto2'))); ?>
                 </div>
             <?php } ?>
 
@@ -275,7 +275,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto3, "foto3", array("width" => 200, 'title' => $model->foto3)); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto3, "foto3", array("width" => 200, 'title' => $model->foto3)); ?>
                 </div>
             <?php } ?>
 
@@ -288,7 +288,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto4, "foto4", array("width" => 200, 'title' => $model->foto4)); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto4, "foto4", array("width" => 200, 'title' => $model->foto4)); ?>
                 </div>
             <?php } ?>
 
@@ -301,7 +301,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto5, "foto5", array("width" => 200, 'title' => $model->foto5)); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto5, "foto5", array("width" => 200, 'title' => $model->foto5)); ?>
                 </div>
             <?php } ?>
 
@@ -310,7 +310,7 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Modificar'); ?>
     </div>
 
     <?php $this->endWidget(); ?>

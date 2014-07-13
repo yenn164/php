@@ -101,33 +101,33 @@ class INMUEBLE extends CActiveRecord
 			'idinmueble' => 'Idinmueble',
 			'fechaPublicacion' => 'Fecha Publicación',
 			'gastosComunes' => 'Gastos Comunes',
-			'superEdif' => 'Super Edif',
-			'anioConst' => 'Año Const',
-			'dormitorios' => 'Dormitorios',
-			'banios' => 'Baños',
+			'superEdif' => 'Superficie Edificada',
+			'anioConst' => 'Año de Construcción',
+			'dormitorios' => 'Cantidad de Dormitorios',
+			'banios' => 'Cantidad de Baños',
 			'cocina' => 'Cocina',
 			'living' => 'Living',
 			'comedor' => 'Comedor',
 			'terraza' => 'Terraza',
 			'piso' => 'Piso',
-			'equipado' => 'Equipado',
-			'padron' => 'Padron',
-			'mejoras' => 'Mejoras',
+			'equipado' => 'Está Equipado?',
+			'padron' => 'Padrón',
+			'mejoras' => 'Tiene Mejoras?',
 			'nivelado' => 'Nivelado',
 			'agreste' => 'Agreste',
 			'tipo' => 'Tipo',
-                        'foto' => 'Foto',
-			'foto2' => 'Foto2',
-			'foto3' => 'Foto3',
-			'foto4' => 'Foto4',
-			'foto5' => 'Foto5',
+                        'foto' => 'Foto 1',
+			'foto2' => 'Foto 2',
+			'foto3' => 'Foto 3',
+			'foto4' => 'Foto 4',
+			'foto5' => 'Foto 5',
                         'departamento' => 'Departamento',
 			'ciudad' => 'Ciudad',
 			'barrio' => 'Barrio',
 			'calle' => 'Calle',
 			'numero' => 'Numero',
 			'apto' => 'Apto',
-			'descripcion' => 'Descripcion',
+			'descripcion' => 'Descripción',
 			'latitud' => 'Latitud',
 			'longitud' => 'Longitud',
                         'precio' => 'Precio',
@@ -149,39 +149,39 @@ class INMUEBLE extends CActiveRecord
 
 		$criteria->compare('idinmueble',$this->idinmueble);
 		$criteria->compare('fechaPublicacion',$this->fechaPublicacion,true);
-		$criteria->compare('gastosComunes',$this->gastosComunes,true);
+		//$criteria->compare('gastosComunes',$this->gastosComunes,true);
 		$criteria->compare('superEdif',$this->superEdif,true);
-		$criteria->compare('anioConst',$this->anioConst);
+		//$criteria->compare('anioConst',$this->anioConst);
 		$criteria->compare('dormitorios',$this->dormitorios);
 		$criteria->compare('banios',$this->banios);
-		$criteria->compare('cocina',$this->cocina);
-		$criteria->compare('living',$this->living);
-		$criteria->compare('comedor',$this->comedor);
+		//$criteria->compare('cocina',$this->cocina);
+		//$criteria->compare('living',$this->living);
+		//$criteria->compare('comedor',$this->comedor);
 		$criteria->compare('terraza',$this->terraza);
-		$criteria->compare('piso',$this->piso);
+		//$criteria->compare('piso',$this->piso);
 		$criteria->compare('equipado',$this->equipado);
-		$criteria->compare('padron',$this->padron);
-		$criteria->compare('mejoras',$this->mejoras);
-		$criteria->compare('nivelado',$this->nivelado);
-		$criteria->compare('agreste',$this->agreste);
+		//$criteria->compare('padron',$this->padron);
+		//$criteria->compare('mejoras',$this->mejoras);
+		//$criteria->compare('nivelado',$this->nivelado);
+		//$criteria->compare('agreste',$this->agreste);
 		$criteria->compare('tipo',$this->tipo,true);
-                $criteria->compare('foto',$this->foto,true);
-		$criteria->compare('foto2',$this->foto2,true);
-		$criteria->compare('foto3',$this->foto3,true);
-		$criteria->compare('foto4',$this->foto4,true);
-		$criteria->compare('foto5',$this->foto5,true);
+                //$criteria->compare('foto',$this->foto,true);
+		//$criteria->compare('foto2',$this->foto2,true);
+		//$criteria->compare('foto3',$this->foto3,true);
+		//$criteria->compare('foto4',$this->foto4,true);
+		//$criteria->compare('foto5',$this->foto5,true);
                 $criteria->compare('departamento',$this->departamento,true);
 		$criteria->compare('ciudad',$this->ciudad,true);
 		$criteria->compare('barrio',$this->barrio,true);
-		$criteria->compare('calle',$this->calle,true);
-		$criteria->compare('numero',$this->numero);
-		$criteria->compare('apto',$this->apto);
-		$criteria->compare('descripcion',$this->descripcion,true);
-		$criteria->compare('latitud',$this->latitud);
-		$criteria->compare('longitud',$this->longitud);
+		//$criteria->compare('calle',$this->calle,true);
+		//$criteria->compare('numero',$this->numero);
+		//$criteria->compare('apto',$this->apto);
+		//$criteria->compare('descripcion',$this->descripcion,true);
+		//$criteria->compare('latitud',$this->latitud);
+		//$criteria->compare('longitud',$this->longitud);
                 $criteria->compare('precio',$this->precio);
 		$criteria->compare('destacado',$this->destacado);
-		$criteria->compare('moneda',$this->moneda);
+		//$criteria->compare('moneda',$this->moneda);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

@@ -4,15 +4,15 @@
 
 $this->breadcrumbs=array(
 	'Inmuebles'=>array('index'),
-	'Create',
+	'Nuevo',
 );
 
 $this->menu=array(
-	array('label'=>'List INMUEBLE', 'url'=>array('index')),
-	array('label'=>'Manage INMUEBLE', 'url'=>array('admin')),
+	array('label'=>'Listado de Inmuebles', 'url'=>array('index')),
+	array('label'=>'Administración de Inmuebles', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create INMUEBLE</h1>
+<h1>Nuevo Inmueble</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
