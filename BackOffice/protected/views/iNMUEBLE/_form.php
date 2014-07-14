@@ -21,6 +21,9 @@
         });
         function mostrar() {
 
+              $('input[type=text]').each(function() {$(this).val(''); });
+              $('input[type=checkbox]').each(function() {$(this).attr('checked', false); });
+
             if ($("#INMUEBLE_tipo :selected").text().trim() === 'Apartamento') {
                 $('#apto').show();
                 $('#aptocasacomercial').show();
@@ -143,10 +146,10 @@
 
     <div id="desc" class="row">
         <div class="row">
-            <?php echo $form->labelEx($model, 'departamento'); ?>
-            <?php echo $form->textField($model, 'departamento', array('size' => 50, 'maxlength' => 50)); ?>
-            <?php echo $form->error($model, 'departamento'); ?>
-
+           <?php echo $form->labelEx($model, 'departamento'); ?>
+             <?php echo $form->dropDownList($model, 'tipo', array('Montevideo' => 'Montevideo', 'Colonia' => 'Colonia', 'Canelones' => 'Canelones', 'San José' => 'San José', 'Maldonado' => 'Maldonado', 'Soriano' => 'Soriano', 'Rocha' => 'Rocha', 'Flores' => 'Flores', 'Florida' => 'Florida', 'Treinta y Tres' => 'Treinta y Tres', 'Cerro Largo' => 'Cerro Largo', 'Río Negro' => 'Río Negro', 'Tacuarembó' => 'Tacuarembó', 'Rivera' => 'Rivera', 'Artigas' => 'Artigas', 'Salto' => 'Salto', 'Lavalleja' => 'Lavalleja', 'Paysandú' => 'Paysandú', 'Durazno' => 'Durazno')); ?>
+             <?php echo $form->error($model, 'departamento'); ?>
+            
             <?php echo $form->labelEx($model, 'ciudad'); ?>
             <?php echo $form->textField($model, 'ciudad', array('size' => 50, 'maxlength' => 50)); ?>
             <?php echo $form->error($model, 'ciudad'); ?>
@@ -171,21 +174,15 @@
             <?php echo $form->textField($model, 'descripcion', array('size' => 60, 'maxlength' => 100)); ?>
             <?php echo $form->error($model, 'descripcion'); ?>
 
-            <?php echo $form->labelEx($model, 'latitud'); ?>
-            <?php echo $form->textField($model, 'latitud'); ?>
-            <?php echo $form->error($model, 'latitud'); ?>
-
-            <?php echo $form->labelEx($model, 'longitud'); ?>
-            <?php echo $form->textField($model, 'longitud'); ?>
-            <?php echo $form->error($model, 'longitud'); ?>
+          
+            <?php echo $form->textField($model, 'latitud', array('style'=>"display:none")); ?>
+            <?php echo $form->textField($model, 'longitud', array('style'=>"display:none")); ?>
     <?php
-    //
-    // ext is your protected.extensions folder
-    // gmaps means the subfolder name under your protected.extensions folder
-    //  
     Yii::import('application.extensions.EGMap.*');
 
     $gMap = new EGMap();
+     $gMap->setWidth(412);
+    $gMap->setHeight(300);
     $gMap->zoom = 16;
     $mapTypeControlOptions = array(
         'position' => EGMapControlPosition::LEFT_BOTTOM,
