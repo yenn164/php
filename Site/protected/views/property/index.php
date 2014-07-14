@@ -61,10 +61,10 @@ $this->breadcrumbs=array(
                         <div class="container">
                             <ul id="filters" class="clearfix">
                                     <li><span class="filter active" data-filter="casa apartamento terreno lcomercial">Todos</span></li>
-                                    <li><span class="filter" data-filter="casa">Casa</span></li>
-                                    <li><span class="filter" data-filter="apartamento">Apartamento</span></li>
-                                    <li><span class="filter" data-filter="terreno">Terreno</span></li>
-                                    <li><span class="filter" data-filter="lcomercial">Local Comerial</span></li>
+                                    <li><span class="filter" data-filter="casa">Casas</span></li>
+                                    <li><span class="filter" data-filter="apartamento">Apartamentos</span></li>
+                                    <li><span class="filter" data-filter="terreno">Terrenos</span></li>
+                                    <li><span class="filter" data-filter="lcomercial">Locales Comerciales</span></li>
                             </ul>
                             <?php $this->widget('PropertiesWidget') ?>
                             

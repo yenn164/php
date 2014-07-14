@@ -127,6 +127,14 @@ class CLIENTEController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
+        
+        	public function actionAgenda()
+	{
+		$dataProvider=new CActiveDataProvider('CLIENTE');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
+	}
 
 	/**
 	 * Manages all models.

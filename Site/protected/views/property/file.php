@@ -70,7 +70,16 @@ if($model['tipo'] == 1){$typePropery = 'Casa';}
 				        <a class="cs-fancybox-thumbs cloud-zoom" rel="adjustX:30,adjustY:0,position:'right',tint:'#202020',tintOpacity:0.5,smoothMove:2,showTitle:true,titleOpacity:0.5" data-fancybox-group="thumb" href="<?php echo $urlpic1?>" title="Women Shorts" alt="Women Shorts">
 				           	<img src="<?php echo $urlpic1?>" alt="Women Shorts" title="Women Shorts" />
 				        </a>
+                                        
+                                        			  <div class="desc1">
+                                        <h3><?php echo $model['ciudad'].', '.$model['ciudad'].'.'?></h3>
+					<p><?php echo $model['descripcion']?></p>
+					<h5><a href="#">Agendar Visita</a></h5>
+					
+			   	 </div>
 				   </div>
+                                            
+                                            
 					<script type="text/javascript">
 						var prodGallery = jQblvg.parseJSON('{"prod_1":{"main":{"orig":"<?php echo $urlpic1?>","main":"<?php echo $urlpic1?>","thumb":"<?php echo $urlpic1?>","label":""},"gallery":{\n\
                                                     "item_0":{"orig":"<?php echo $urlpic1?>","main":"<?php echo $urlpic1?>","thumb":"<?php echo $urlpic1?>","label":""},\n\
@@ -114,13 +123,8 @@ if($model['tipo'] == 1){$typePropery = 'Casa';}
 				<!-- end product_slider -->
 			</div>
 			<!-- start span1_of_1 -->
-			<div class="span1_of_1_des">
-				  <div class="desc1">
-                                        <h3><?php echo $model['ciudad'].' '.$model['ciudad']?></h3>
-					<p><?php echo $model['descripcion']?></p>
-					<h5><a href="#">Agendar Visita</a></h5>
-					
-			   	 </div>
+			<div >
+	
 			   	</div>
 			   	<div class="clear"></div>
 			   	<!-- start tabs -->
@@ -133,14 +137,14 @@ if($model['tipo'] == 1){$typePropery = 'Casa';}
 					
 			        <div class="content">
 				        <div class="content-1">
-				        	<p class="para top"><span></span><?php  echo $typePropery. '- Ubicado en el departamento de '.$model['departamento'].' en la ciudad de '.$model['ciudad']. ' barrio '.$model['barrio'].' con direccion: '.$model['calle']. ' '. $model['numero'].' '.$model['apto'].' publicado el '.$model['fechaPublicacion'] ?></p>
+				        	<p class="para top"><span></span><?php  echo $typePropery. '- Ubicado en '.$model['departamento'].', '.$model['ciudad']. ', en el barrio '.$model['barrio'].'. Dirección: '.$model['calle']. ' '. $model['numero'].' / '.$model['apto'].'. Publicado el '.$model['fechaPublicacion'] ?></p>
 							<ul>
 								<li>Gastos comunes: <?php echo $model['gastosComunes']?></li>
 								<li>Superficie edificada: <?php echo $model['superEdif']?> m2</li>
-								<li>Año deconstrucción: <?php echo $model['anioConst']?></li>
+								<li>Año de Construcción: <?php echo $model['anioConst']?></li>
 								<li>Dormitorios: <?php echo $model['dormitorios']?></li>
                                                                 <li>Baños: <?php echo $model['banios']?></li>
-                                                                <li>Cocinas: <?php echo $model['cocina']?></li>
+                                                                <li>Cocina: <?php echo $model['cocina']?></li>
                                                                 <li>Living: <?php if($model['living'] == 1){$living = 'SI';}else {$living = 'NO';}
                                                                      echo $living?> </li>
                                                                 <li>Comedor: <?php if($model['comedor'] == 1){$comedor = 'SI';}else {$comedor = 'NO';} echo $comedor?> </li>

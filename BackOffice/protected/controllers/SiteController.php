@@ -31,7 +31,7 @@ class SiteController extends Controller
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index');
 	}
-
+        
 	/**
 	 * This is the action to handle external exceptions.
 	 */
