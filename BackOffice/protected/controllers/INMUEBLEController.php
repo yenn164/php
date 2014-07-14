@@ -289,7 +289,7 @@ class INMUEBLEController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('INMUEBLE');
+		$dataProvider=new CActiveDataProvider('INMUEBLE', array('pagination' => array('pageSize' => 2)));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
