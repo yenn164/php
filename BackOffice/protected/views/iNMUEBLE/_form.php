@@ -57,18 +57,20 @@
 
     <div class="row">
         <?php echo $form->labelEx($model, 'fechaPublicacion'); ?>
-
+        <?php echo $form->textField($model, 'fechaPublicacion', array('value' => date("Y-m-d"),'readonly' => TRUE)); ?>
         <?php echo $form->error($model, 'fechaPublicacion'); ?>
-        <?php
-        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-            'model' => $model,
-            'attribute' => 'fechaPublicacion',
-            // additional javascript options for the date picker plugin        
-            'options' => array(
-                'showAnim' => 'slide',
-            ),
-        ));
-        ?>
+       <!-- <?php
+//        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+//            'model' => $model,
+//            'attribute' => 'fechaPublicacion',
+//            date("Y-m-d")
+//            // additional javascript options for the date picker plugin        
+//            'options' => array(
+//                'dateFormat'=>'yy-mm-dd',
+//                'showAnim' => 'slide',
+//            ),
+//        ));
+//        ?> -->
     </div>     
     <div class="row">
         <?php echo $form->labelEx($model, 'tipo'); ?>
