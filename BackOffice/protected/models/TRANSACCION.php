@@ -43,7 +43,7 @@ class TRANSACCION extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('tipoTrans, fechaTrans, idClientePropietario, idInmueble', 'required'),
+			array('tipoTrans, fechaTrans, idClientePropietario, idInmueble, idClienteInteres', 'required'),
 			array('tipoTrans, idClientePropietario, idInmueble, idClienteInteres', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
