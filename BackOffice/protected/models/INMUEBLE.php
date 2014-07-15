@@ -61,7 +61,7 @@ class INMUEBLE extends CActiveRecord
 		// will receive user inputs.
 		return array(
 //			array('fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'required'),
-			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste', 'numerical', 'integerOnly'=>true),
+			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, precio, numero, apto', 'numerical', 'integerOnly'=>true),
                         array('latitud, longitud', 'numerical'),	
                         array('gastosComunes, superEdif', 'length', 'max'=>6),
 			array('tipo', 'length', 'max'=>10),
@@ -71,7 +71,7 @@ class INMUEBLE extends CActiveRecord
 			// Please remove those attributes that should not be searched.
                         array('departamento, ciudad, barrio, calle', 'length', 'max'=>50),
 			array('descripcion', 'length', 'max'=>100),
-			array('idinmueble, fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'safe', 'on'=>'search'),
+			array('idinmueble,  fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo, destacado', 'safe', 'on'=>'search'),
                         array('picture', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
                         array('picture2', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),
                         array('picture3', 'file','types'=>'jpg, gif, png','allowEmpty'=>true),

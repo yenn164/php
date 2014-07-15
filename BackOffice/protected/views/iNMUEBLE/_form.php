@@ -13,15 +13,11 @@
         'htmlOptions' => array('enctype' => 'multipart/form-data'),
     ));
     ?>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script>
-        $(function() {
-            $("#anim").change(function() {
-                $("#INMUEBLE_fechaPublicacion").datepicker("option", "showAnim", $(this).val());
-            });
-        });
-        function mostrar() {
+          function mostrar() {
 
-              $('input[type=text]').each(function() {$(this).val(''); });
+              $('input[type=text]').each(function() {if($(this).attr('id') !== $("#INMUEBLE_fechaPublicacion").attr('id')) $(this).val(''); });
               $('input[type=checkbox]').each(function() {$(this).attr('checked', false); });
 
             if ($("#INMUEBLE_tipo :selected").text().trim() === 'Apartamento') {
@@ -149,7 +145,7 @@
     <div id="desc" class="row">
         <div class="row">
            <?php echo $form->labelEx($model, 'departamento'); ?>
-             <?php echo $form->dropDownList($model, 'tipo', array('Montevideo' => 'Montevideo', 'Colonia' => 'Colonia', 'Canelones' => 'Canelones', 'San José' => 'San José', 'Maldonado' => 'Maldonado', 'Soriano' => 'Soriano', 'Rocha' => 'Rocha', 'Flores' => 'Flores', 'Florida' => 'Florida', 'Treinta y Tres' => 'Treinta y Tres', 'Cerro Largo' => 'Cerro Largo', 'Río Negro' => 'Río Negro', 'Tacuarembó' => 'Tacuarembó', 'Rivera' => 'Rivera', 'Artigas' => 'Artigas', 'Salto' => 'Salto', 'Lavalleja' => 'Lavalleja', 'Paysandú' => 'Paysandú', 'Durazno' => 'Durazno')); ?>
+             <?php echo $form->dropDownList($model, 'departamento', array('Montevideo' => 'Montevideo', 'Colonia' => 'Colonia', 'Canelones' => 'Canelones', 'San José' => 'San José', 'Maldonado' => 'Maldonado', 'Soriano' => 'Soriano', 'Rocha' => 'Rocha', 'Flores' => 'Flores', 'Florida' => 'Florida', 'Treinta y Tres' => 'Treinta y Tres', 'Cerro Largo' => 'Cerro Largo', 'Río Negro' => 'Río Negro', 'Tacuarembó' => 'Tacuarembó', 'Rivera' => 'Rivera', 'Artigas' => 'Artigas', 'Salto' => 'Salto', 'Lavalleja' => 'Lavalleja', 'Paysandú' => 'Paysandú', 'Durazno' => 'Durazno')); ?>
              <?php echo $form->error($model, 'departamento'); ?>
             
             <?php echo $form->labelEx($model, 'ciudad'); ?>
@@ -236,6 +232,7 @@
 
     $gMap->renderMap();
     ?>
+            
 
         </div>
     </div>
