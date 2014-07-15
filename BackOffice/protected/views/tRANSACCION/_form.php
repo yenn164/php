@@ -38,11 +38,13 @@
 		<?php echo $form->textField($model,'idInmueble'); ?>
 		<?php echo $form->error($model,'idInmueble'); ?>
 	</div>
-
-	<div class="row">
+        
+        <div class="row">
 		<?php echo $form->labelEx($model,'idClienteInteres'); ?>
-		<?php echo $form->textField($model,'idClienteInteres'); ?>
-		<?php echo $form->error($model,'idClienteInteres'); ?>
+            <?php 
+            $list = CHtml::listData($model->clientes,'idCLiente','nombre');
+            echo $form->dropDownList($model, 'idClienteInteres', $list) ?>
+    		<?php echo $form->error($model,'idClienteInteres');?>
 	</div>
 
 	<div class="row buttons">

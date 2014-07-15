@@ -38,7 +38,8 @@
                                 array('label'=>'Usuarios', 'url'=>array('USER/index', array("view"=>"index"))),
 				array('label'=>'Inmuebles', 'url'=>array('INMUEBLE/index', array("view"=>"index"))),
 				array('label'=>'Clientes', 'url'=>array('CLIENTE/index', array("view"=>"index"))),
-                                array('label'=>'Agenda', 'url'=>array('TRANSACCION/index', array("view"=>"index"))),
+                                array('label'=>'Transacciones', 'url'=>array('TRANSACCION/index', array("view"=>"index"))), 
+                                array('label'=>'Agenda', 'url'=>array('TRANSACCION/agenda', array("view"=>"agenda"))), 
 				array('label'=>'Iniciar Sesión', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Finalizar Sesión ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List TRANSACCION', 'url'=>array('index')),
-	array('label'=>'Create TRANSACCION', 'url'=>array('create')),
-	array('label'=>'Update TRANSACCION', 'url'=>array('update', 'id'=>$model->idTrans)),
-	array('label'=>'Delete TRANSACCION', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idTrans),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage TRANSACCION', 'url'=>array('admin')),
+	array('label'=>'Listado de Transacciones', 'url'=>array('index')),
+//	array('label'=>'Create TRANSACCION', 'url'=>array('create')),
+	array('label'=>'Editar Transaccion', 'url'=>array('update', 'id'=>$model->idTrans)),
+	array('label'=>'Borrar Transaccion', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idTrans),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administracion de Transacciones', 'url'=>array('admin')),
 );
 ?>
 

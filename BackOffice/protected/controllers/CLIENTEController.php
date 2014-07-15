@@ -111,6 +111,14 @@ class CLIENTEController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+                 $modelt=new TRANSACCION;
+               
+               $inmuebles = Yii::app()->db->createCommand()
+                      ->select('i.idinmueble')
+                      ->from('INMUEBLE i')             
+                       ->leftjoin('TRANSACCION t','i.idinmueble = t.idInmueble  and t.idClientePropietario = NULL')
+                         ->queryAll();
+                   $model->inmuebles = $inmuebles;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -118,7 +126,14 @@ class CLIENTEController extends Controller
 		if(isset($_POST['CLIENTE']))
 		{
 			$model->attributes=$_POST['CLIENTE'];
-			if($model->save())
+			if($model->insert()){
+                          $modelt->idClientePropietario = $model->idCliente;
+                          $modelt->fechaTrans = $model->fechaTrans;
+                          $modelt->tipoTrans = $model->tipoTrans;
+                          $modelt->idInmueble = $model->idInmueble;
+                          $modelt->idTrans = $model->idTrans;
+                          $modelt->insert();
+                        }
 				$this->redirect(array('view','id'=>$model->idCliente));
 		}
 

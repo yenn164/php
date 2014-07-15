@@ -28,15 +28,15 @@ class TRANSACCIONController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'agenda'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'agenda'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete', 'agenda'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -54,6 +54,11 @@ class TRANSACCIONController extends Controller
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
+	}
+        
+        public function actionAgenda()
+	{
+		$this->render('agenda');
 	}
 
 	/**
@@ -87,7 +92,12 @@ class TRANSACCIONController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+                 $clientes = Yii::app()->db->createCommand()
+                      ->select('idCLiente, nombre')
+                      ->from('CLIENTE')
+                    ->where('idCLiente<>:id', array(':id'=> $model->idClientePropietario))
+                       ->queryAll();
+                   $model->clientes = $clientes;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -127,7 +137,8 @@ class TRANSACCIONController extends Controller
 			'dataProvider'=>$dataProvider,
 		));
 	}
-
+        
+        
 	/**
 	 * Manages all models.
 	 */

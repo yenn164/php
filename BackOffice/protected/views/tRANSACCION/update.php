@@ -9,10 +9,10 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List TRANSACCION', 'url'=>array('index')),
-	array('label'=>'Create TRANSACCION', 'url'=>array('create')),
-	array('label'=>'View TRANSACCION', 'url'=>array('view', 'id'=>$model->idTrans)),
-	array('label'=>'Manage TRANSACCION', 'url'=>array('admin')),
+	array('label'=>'Listado de Transacciones', 'url'=>array('index')),
+//	array('label'=>'Create TRANSACCION', 'url'=>array('create')),
+	array('label'=>'Detalle', 'url'=>array('view', 'id'=>$model->idTrans)),
+	array('label'=>'Administración de Transacciones', 'url'=>array('admin')),
 );
 ?>
 
