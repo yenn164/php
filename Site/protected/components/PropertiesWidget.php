@@ -14,24 +14,10 @@
 class PropertiesWidget extends CWidget {
 
     public function run() {
-        
-       /* $model=new PropertyForm('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['INMUEBLE']))
-			$model->attributes=$_GET['INMUEBLE'];
-
-		$this->render('admin',array(
-			'model'=>$model,
-		));
-              */  
         $models = Yii::app()->db->createCommand()
         ->select('idinmueble, fechaPublicacion, foto, descripcion, tipo')
         ->from('INMUEBLE')
         ->queryAll();
-        
-       
-        
-        //$models = NEW PropertyForm('serch');
 
         $this->render('properties', array(
             'models'=>$models   

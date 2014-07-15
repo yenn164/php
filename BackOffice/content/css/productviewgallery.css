@@ -220,7 +220,7 @@
     margin-right: 10px;
 }
 .product-view .product-img-box .more-views li {
-    margin-bottom:33px !important;
+    margin-bottom: -30px !important;
 }
 /* product view gallery */
 .img_play_btn {

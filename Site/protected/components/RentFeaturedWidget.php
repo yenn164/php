@@ -17,7 +17,7 @@ class RentFeaturedWidget  extends CWidget {
         
         $models = Yii::app()->db->createCommand()
         ->select('i.idinmueble, i.foto, i.descripcion, i.tipo, i.ciudad, i.barrio')
-        ->from('INMUEBLE i, TRANSACION t')
+        ->from('INMUEBLE i, TRANSACCION t')
         ->where('i.destacado = 1 and t.idInmueble = i.idinmueble and t.tipoTrans = 2')
         ->queryAll();
         

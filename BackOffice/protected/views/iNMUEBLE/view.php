@@ -8,15 +8,15 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List INMUEBLE', 'url'=>array('index')),
-	array('label'=>'Create INMUEBLE', 'url'=>array('create')),
-	array('label'=>'Update INMUEBLE', 'url'=>array('update', 'id'=>$model->idinmueble)),
-	array('label'=>'Delete INMUEBLE', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idinmueble),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage INMUEBLE', 'url'=>array('admin')),
+	array('label'=>'Listado de Inmueble', 'url'=>array('index')),
+	array('label'=>'Nuevo Inmueble', 'url'=>array('create')),
+	array('label'=>'Modificar Inmueble', 'url'=>array('update', 'id'=>$model->idinmueble)),
+	array('label'=>'Borrar Inmueble', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idinmueble),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administración de Inmuebles', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View INMUEBLE #<?php echo $model->idinmueble; ?></h1>
+<h1>Detalle de Inmueble:  #<?php echo $model->idinmueble; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,

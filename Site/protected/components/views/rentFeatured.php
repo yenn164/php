@@ -34,13 +34,13 @@
             <?php foreach($models as $rows): ?>
 
             <?php  $urlpic = Yii::app()->params['urlPropreriesPic'] . $rows['foto'] ?>
-            <div class="item" onclick="location.href='details.html';">
+            <div class="item" onclick="location.href='<?php echo Yii::app()->createUrl('property/OpenFile', array("id"=>$rows['idinmueble'])); ?>';">
                     <div class="cau_left">
                             <img class="lazyOwl" data-src="<?php echo $urlpic?>" alt="Lazy Owl Image">
                     </div>
                     <div class="cau_left">
-                            <h4><a href="details.html"><?php echo $rows['ciudad']. ' '.$rows['barrio']. ' '.$rows['descripcion'] ?></a></h4>
-                            <a href="details.html" class="btn">Detalle</a>
+                            <h4><a href="<?php echo Yii::app()->createUrl('property/OpenFile', array("id"=>$rows['idinmueble'])); ?>"><?php echo $rows['ciudad']. ' '.$rows['barrio']. ' '.$rows['descripcion'] ?></a></h4>
+                            <a href="<?php echo Yii::app()->createUrl('property/OpenFile', array("id"=>$rows['idinmueble'])); ?>" class="btn">Detalle</a>
                     </div>
             </div>
             <?php endforeach; ?>

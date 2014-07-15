@@ -63,7 +63,7 @@ class INMUEBLEController extends Controller
 	public function actionCreate()
 	{
 		$model=new INMUEBLE;
-                $path_picture = "protected/images/uploads"."/";//ruta final de la imagen
+                $path_picture = "protected/images/upload"."/";//ruta final de la imagen
                
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -167,7 +167,7 @@ class INMUEBLEController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-                $path_picture = "protected/images/uploads"."/";//ruta final de la imagen
+                $path_picture = "protected/images/upload"."/";//ruta final de la imagen
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -289,7 +289,7 @@ class INMUEBLEController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('INMUEBLE');
+		$dataProvider=new CActiveDataProvider('INMUEBLE', array('pagination' => array('pageSize' => 2)));
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -321,7 +321,7 @@ class INMUEBLEController extends Controller
 	{
 		$model=INMUEBLE::model()->findByPk($id);
 		if($model===null)
-			throw new CHttpException(404,'The requested page does not exist.');
+			throw new CHttpException(404,'No existe la página solicitada.');
 		return $model;
 	}
 

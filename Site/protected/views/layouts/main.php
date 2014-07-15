@@ -11,30 +11,6 @@
         <link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/style.css" rel="stylesheet" type="text/css" media="all"/>
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/jquery.min.js"></script>
         
-        <!-- Owl Carousel Assets 
-		<link href="<?php echo Yii::app()->request->baseUrl; ?>/content/css/owl.carousel.css" rel="stylesheet" type="text/css"/>
-		     <!-- Owl Carousel Assets -->
-		    <!-- Prettify 
-		    <script src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/owl.carousel.js"></script>
-                     <script>
-		    $(document).ready(function() {
-		
-		      $("#owl-demo").owlCarousel({
-		        items : 4,
-		        lazyLoad : true,
-		        autoPlay : true,
-		        navigation : true,
-			    navigationText : ["",""],
-			    rewindNav : false,
-			    scrollPerPage : false,
-			    pagination : false,
-    			paginationNumbers: false,
-		      });
-		
-		    });
-		    </script>
-		   <!-- //Owl Carousel Assets -->
-                   <!-- start top_js_button -->
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/move-top.js"></script>
 		<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/content/js/easing.js"></script>
 		   <script type="text/javascript">
@@ -68,9 +44,7 @@
 			<ul>
 				<li class="active"><a href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>">Inicio</a></li> |
 				<li><a href="<?php echo Yii::app()->createUrl('property/index', array("view"=>"index")); ?>">Listado<a></li> |
-				<li><a href="avanzada.html">Búsqueda Avanzada</a></li> |
                                 <li><a href="echo Url::toRoute(['page', 'id' => 'avanzada']);">Búsqueda Avanzada</a></li> |
-				<li><a href="mapa.html">Ubicación en Mapa</a></li> |
 				<li><a href="<?php echo Yii::app()->createUrl('service/index', array("view"=>"index")); ?>">Servicios</a></li> |
                                 <li><a href="<?php echo Yii::app()->createUrl('site/contact', array("view"=>"contact")); ?>">Contacto</a></li>
 			</ul>
@@ -81,8 +55,7 @@
 	                  <ul class="nav-list" style="">
 	            	        <li class="nav-item"><a class="active" href="<?php echo Yii::app()->createUrl('site/index', array("view"=>"index")); ?>">Inicio</a></li>
 							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('property/index', array("view"=>"index")); ?>">Listado</a></li>
-							<li class="nav-item"><a href="avanzada.html">Búsqueda Avanzada</a></li>
-							<li class="nav-item"><a href="mapa.html">Ubicación en Mapa</a></li>
+							
 							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('service/index', array("view"=>"index")); ?>">Servicios</a></li>
 							<li class="nav-item"><a href="<?php echo Yii::app()->createUrl('site/contact', array("view"=>"contact")); ?>">Contact</a></li>
 	                 </ul>

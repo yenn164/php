@@ -21,6 +21,9 @@
         });
         function mostrar() {
 
+              $('input[type=text]').each(function() {$(this).val(''); });
+              $('input[type=checkbox]').each(function() {$(this).attr('checked', false); });
+
             if ($("#INMUEBLE_tipo :selected").text().trim() === 'Apartamento') {
                 $('#apto').show();
                 $('#aptocasacomercial').show();
@@ -48,24 +51,26 @@
         }
         ;
     </script>
-    <p class="note">Fields with <span class="required">*</span> are required.</p>
+    <p class="note">Campos con <span class="required">*</span> son obligatorios.</p>
 
     <?php echo $form->errorSummary($model); ?>
 
     <div class="row">
         <?php echo $form->labelEx($model, 'fechaPublicacion'); ?>
-
+        <?php echo $form->textField($model, 'fechaPublicacion', array('value' => date("Y-m-d"),'readonly' => TRUE)); ?>
         <?php echo $form->error($model, 'fechaPublicacion'); ?>
-        <?php
-        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
-            'model' => $model,
-            'attribute' => 'fechaPublicacion',
-            // additional javascript options for the date picker plugin        
-            'options' => array(
-                'showAnim' => 'slide',
-            ),
-        ));
-        ?>
+       <!-- <?php
+//        $this->widget('zii.widgets.jui.CJuiDatePicker', array(
+//            'model' => $model,
+//            'attribute' => 'fechaPublicacion',
+//            date("Y-m-d")
+//            // additional javascript options for the date picker plugin        
+//            'options' => array(
+//                'dateFormat'=>'yy-mm-dd',
+//                'showAnim' => 'slide',
+//            ),
+//        ));
+//        ?> -->
     </div>     
     <div class="row">
         <?php echo $form->labelEx($model, 'tipo'); ?>
@@ -143,10 +148,10 @@
 
     <div id="desc" class="row">
         <div class="row">
-            <?php echo $form->labelEx($model, 'departamento'); ?>
-            <?php echo $form->textField($model, 'departamento', array('size' => 50, 'maxlength' => 50)); ?>
-            <?php echo $form->error($model, 'departamento'); ?>
-
+           <?php echo $form->labelEx($model, 'departamento'); ?>
+             <?php echo $form->dropDownList($model, 'tipo', array('Montevideo' => 'Montevideo', 'Colonia' => 'Colonia', 'Canelones' => 'Canelones', 'San José' => 'San José', 'Maldonado' => 'Maldonado', 'Soriano' => 'Soriano', 'Rocha' => 'Rocha', 'Flores' => 'Flores', 'Florida' => 'Florida', 'Treinta y Tres' => 'Treinta y Tres', 'Cerro Largo' => 'Cerro Largo', 'Río Negro' => 'Río Negro', 'Tacuarembó' => 'Tacuarembó', 'Rivera' => 'Rivera', 'Artigas' => 'Artigas', 'Salto' => 'Salto', 'Lavalleja' => 'Lavalleja', 'Paysandú' => 'Paysandú', 'Durazno' => 'Durazno')); ?>
+             <?php echo $form->error($model, 'departamento'); ?>
+            
             <?php echo $form->labelEx($model, 'ciudad'); ?>
             <?php echo $form->textField($model, 'ciudad', array('size' => 50, 'maxlength' => 50)); ?>
             <?php echo $form->error($model, 'ciudad'); ?>
@@ -171,21 +176,15 @@
             <?php echo $form->textField($model, 'descripcion', array('size' => 60, 'maxlength' => 100)); ?>
             <?php echo $form->error($model, 'descripcion'); ?>
 
-            <?php echo $form->labelEx($model, 'latitud'); ?>
-            <?php echo $form->textField($model, 'latitud'); ?>
-            <?php echo $form->error($model, 'latitud'); ?>
-
-            <?php echo $form->labelEx($model, 'longitud'); ?>
-            <?php echo $form->textField($model, 'longitud'); ?>
-            <?php echo $form->error($model, 'longitud'); ?>
+          
+            <?php echo $form->textField($model, 'latitud', array('style'=>"display:none")); ?>
+            <?php echo $form->textField($model, 'longitud', array('style'=>"display:none")); ?>
     <?php
-    //
-    // ext is your protected.extensions folder
-    // gmaps means the subfolder name under your protected.extensions folder
-    //  
     Yii::import('application.extensions.EGMap.*');
 
     $gMap = new EGMap();
+     $gMap->setWidth(412);
+    $gMap->setHeight(300);
     $gMap->zoom = 16;
     $mapTypeControlOptions = array(
         'position' => EGMapControlPosition::LEFT_BOTTOM,
@@ -251,7 +250,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto, "foto", array("width" => 200, 'title' => $model->getAttributeLabel('foto'))); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto, "foto", array("width" => 200, 'title' => $model->getAttributeLabel('foto'))); ?>
                 </div>
             <?php } ?>
             <?php
@@ -262,7 +261,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto2, "foto2", array("width" => 200, 'title' => $model->getAttributeLabel('foto2'))); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto2, "foto2", array("width" => 200, 'title' => $model->getAttributeLabel('foto2'))); ?>
                 </div>
             <?php } ?>
 
@@ -275,7 +274,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto3, "foto3", array("width" => 200, 'title' => $model->foto3)); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto3, "foto3", array("width" => 200, 'title' => $model->foto3)); ?>
                 </div>
             <?php } ?>
 
@@ -288,7 +287,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto4, "foto4", array("width" => 200, 'title' => $model->foto4)); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto4, "foto4", array("width" => 200, 'title' => $model->foto4)); ?>
                 </div>
             <?php } ?>
 
@@ -301,7 +300,7 @@
             <?php if (!$model->isNewRecord) { //mostramos la imagen?>
                 <div class="container">
                     <?php //echo CHtml::image(Yii::app()->params['file_tours'].$model->fotoprincipal,"fotoprincipal",array("width"=>200, 'title'=>$model->fotoprincipal)); ?>
-                    <?php echo CHtml::image('protected/images/uploads/' . $model->foto5, "foto5", array("width" => 200, 'title' => $model->foto5)); ?>
+                    <?php echo CHtml::image('protected/images/upload/' . $model->foto5, "foto5", array("width" => 200, 'title' => $model->foto5)); ?>
                 </div>
             <?php } ?>
 
@@ -310,7 +309,7 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Modificar'); ?>
     </div>
 
     <?php $this->endWidget(); ?>
