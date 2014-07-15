@@ -29,16 +29,16 @@ class USERController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('admin'),
+				//'users'=>array('admin'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('admin'),
+				//'users'=>array('admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete','assign'),
-				'users'=>array('admin'),
-			),
+				//'users'=>array('admin'),
+                                			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
@@ -57,15 +57,22 @@ class USERController extends Controller
 	}
 
         public function actionAssign($id)
+        
         {
-            If (Yii::app()->authManager->checkAccess($_GET["item"],$id))
-               (Yii::app()->authManager->revoke($_GET["item"],$id));
-           else 
-               Yii::app()->authManager->assign($_GET["item"],$id);
-               $this->redirect(array("view","id"=>$id));
-           
-                    
-        }
+          $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+          $enabled = Yii::app()->authManager->isAssigned('Director',$user->id);
+          If ($enabled)
+          {
+              If (Yii::app()->authManager->isAssigned($_GET["item"],$id))
+                (Yii::app()->authManager->revoke($_GET["item"],$id));
+              else 
+                  Yii::app()->authManager->assign($_GET["item"],$id);
+              $this->redirect(array("view","id"=>$id));
+          }
+          Else
+              throw new CHttpException(403,'Acceso denegado');
+               
+          }
         
                        
 	/**
@@ -74,21 +81,30 @@ class USERController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new USER;
+                $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+                $enabled = Yii::app()->authManager->isAssigned('Director',$user->id);
+                If ($enabled)
+                {
+                    $model=new USER;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+                    // Uncomment the following line if AJAX validation is needed
+                    // $this->performAjaxValidation($model);
 
-		if(isset($_POST['USER']))
-		{
-			$model->attributes=$_POST['USER'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
-		}
+                    if(isset($_POST['USER']))
+                    {
+                            $model->attributes=$_POST['USER'];
+                            if($model->save())
+                                    $this->redirect(array('view','id'=>$model->id));
+                    }
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
+                    $this->render('create',array(
+                            'model'=>$model,
+                    ));
+                }
+                Else
+                    throw new CHttpException(403,'Acceso denegado');
+               
+                
 	}
 
 	/**
@@ -98,6 +114,10 @@ class USERController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+          $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+          $enabled = Yii::app()->authManager->isAssigned('Director',$user->id);
+          If ($enabled)
+          {
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -113,6 +133,9 @@ class USERController extends Controller
 		$this->render('update',array(
 			'model'=>$model,
 		));
+          }
+          Else
+               throw new CHttpException(403,'Acceso denegado');
 	}
 
 	/**
@@ -122,12 +145,20 @@ class USERController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+          $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+          $enabled = Yii::app()->authManager->isAssigned('Director',$user->id);
+          If ($enabled)
+          {
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
+          }
+           Else
+               throw new CHttpException(403,'Acceso denegado');
+                
+          }
 
 	/**
 	 * Lists all models.
@@ -145,6 +176,10 @@ class USERController extends Controller
 	 */
 	public function actionAdmin()
 	{
+          $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+          $enabled = Yii::app()->authManager->isAssigned('Director',$user->id);
+          If ($enabled)
+          {
 		$model=new USER('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['USER']))
@@ -153,6 +188,10 @@ class USERController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+          }
+          Else
+              throw new CHttpException(403,'Acceso denegado');
+                
 	}
 
 	/**

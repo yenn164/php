@@ -37,7 +37,7 @@ class INMUEBLEController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+			//	'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -62,6 +62,10 @@ class INMUEBLEController extends Controller
 	 */
 	public function actionCreate()
 	{
+            $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+            $enabled = (Yii::app()->authManager->isAssigned('Director',$user->id) Or Yii::app()->authManager->isAssigned('Administrador',$user->id)) ;
+            If ($enabled)
+            {
 		$model=new INMUEBLE;
                 $path_picture = "protected/images/upload"."/";//ruta final de la imagen
                
@@ -157,6 +161,9 @@ class INMUEBLEController extends Controller
 		$this->render('create',array(
 			'model'=>$model,
 		));
+            }
+            Else
+                throw new CHttpException(403,'Acceso denegado');
 	}
 
 	/**
@@ -166,6 +173,10 @@ class INMUEBLEController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+            $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+            $enabled = (Yii::app()->authManager->isAssigned('Director',$user->id) Or Yii::app()->authManager->isAssigned('Administrador',$user->id)) ;
+            If ($enabled)
+            {
 		$model=$this->loadModel($id);
                 $path_picture = "protected/images/upload"."/";//ruta final de la imagen
 
@@ -268,6 +279,9 @@ class INMUEBLEController extends Controller
 		$this->render('update',array(
 			'model'=>$model,
 		));
+             }
+                 throw new CHttpException(403,'Acceso denegado');
+                
 	}
 
 	/**
@@ -277,12 +291,19 @@ class INMUEBLEController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+            $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+            $enabled = (Yii::app()->authManager->isAssigned('Director',$user->id) Or Yii::app()->authManager->isAssigned('Administrador',$user->id)) ;
+            If ($enabled)
+            {
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	}
+            }
+                 throw new CHttpException(403,'Acceso denegado');
+                
+        }
 
 	/**
 	 * Lists all models.
@@ -300,6 +321,10 @@ class INMUEBLEController extends Controller
 	 */
 	public function actionAdmin()
 	{
+            $user = USER::model()->findByAttributes(array('nombre'=>Yii::app()->user->name));
+            $enabled = (Yii::app()->authManager->isAssigned('Director',$user->id) Or Yii::app()->authManager->isAssigned('Administrador',$user->id)) ;
+            If ($enabled)
+            {
 		$model=new INMUEBLE('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['INMUEBLE']))
@@ -308,6 +333,8 @@ class INMUEBLEController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+            }
+                 throw new CHttpException(403,'Acceso denegado');
 	}
 
 	/**
