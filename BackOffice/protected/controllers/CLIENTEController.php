@@ -63,21 +63,45 @@ class CLIENTEController extends Controller
 	public function actionCreate()
 	{
 		$model=new CLIENTE;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+                $modelt=new TRANSACCION;
+               
+               $inmuebles = Yii::app()->db->createCommand()
+                      ->select('i.idinmueble')
+                      ->from('INMUEBLE i')             
+                       ->leftjoin('TRANSACCION t','i.idinmueble = t.idInmueble  and t.idClientePropietario = NULL')
+                         ->queryAll();
+                   $model->inmuebles = $inmuebles;
+                   
 		if(isset($_POST['CLIENTE']))
 		{
-			$model->attributes=$_POST['CLIENTE'];
-			if($model->save())
+                        
+			$model->attributes=$_POST['CLIENTE']; 
+                         $modelt->idClientePropietario = $model->idCliente;
+                          $modelt->fechaTrans = $model->fechaTrans;
+                           $modelt->tipoTrans = $model->tipoTrans;
+                            $modelt->idInmueble = $model->idInmueble;
+                       $modelt->idTrans = $model->idTrans;
+//                        Yii::app()->user->setFlash('tuvieja','hola'. $model->tipoTrans);
+//                          $this->refresh();
+//                        $modelt->attributes=$_POST['TRANSACCION'];
+			if($model->insert()){
+                                       
+                          $modelt->idClientePropietario = $model->idCliente;
+                          $modelt->fechaTrans = $model->fechaTrans;
+                          $modelt->tipoTrans = $model->tipoTrans;
+                          $modelt->idInmueble = $model->idInmueble;
+                          $modelt->idTrans = $model->idTrans;
+                         
+                          $modelt->insert();
 				$this->redirect(array('view','id'=>$model->idCliente));
+                        }
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+			'model'=>$model,                      
 		));
 	}
+
 
 	/**
 	 * Updates a particular model.

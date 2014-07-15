@@ -18,6 +18,14 @@
  */
 class CLIENTE extends CActiveRecord
 {
+        public $inmuebles;
+        
+        public $idTrans;
+	public $tipoTrans; 
+	public $fechaTrans;
+	public $idClientePropietario;
+	public $idInmueble;
+	public $idClienteInteres;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -44,7 +52,7 @@ class CLIENTE extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nombre, documento, telefono, celular, email, direccion', 'required'),
+			array('nombre, documento, telefono, celular, email, direccion, tipoTrans, fechaTrans, idInmueble', 'required'),
 			array('documento, telefono, celular', 'numerical', 'integerOnly'=>true),
 			array('nombre', 'length', 'max'=>30),
 			array('email, direccion', 'length', 'max'=>20),
@@ -80,6 +88,12 @@ class CLIENTE extends CActiveRecord
 			'celular' => 'Celular',
 			'email' => 'Email',
 			'direccion' => 'Direccion',
+                        'idTrans' => 'Id Trans',
+			'tipoTrans' => 'Tipo Trans',
+			'fechaTrans' => 'Fecha Trans',
+			'idClientePropietario' => 'Id Cliente Propietario',
+			'idInmueble' => 'Id Inmueble',
+			'idClienteInteres' => 'Id Cliente Interes',
 		);
 	}
 

@@ -50,6 +50,29 @@
 		<?php echo $form->textField($model,'direccion',array('size'=>60,'maxlength'=>100)); ?>
 		<?php echo $form->error($model,'direccion'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'Tipo Trans'); ?>
+                <?php echo $form->dropDownList($model, 'tipoTrans', array(1 => 'ALQUILER', 2 => 'VENTA')); ?>		
+		<?php echo $form->error($model,'tipoTrans'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'Fecha Trans'); ?>            
+		<?php echo $form->textField($model,'fechaTrans', array('value' => date("Y-m-d"),'readonly' => TRUE)); ?>
+		<?php echo $form->error($model,'fechaTrans'); ?>
+	</div>
+
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'Id Inmueble'); ?>
+            <?php 
+            $list = CHtml::listData($model->inmuebles, 'idinmueble', 'idinmueble');
+            echo $form->dropDownList($model, 'idInmueble', $list) ?>
+    		<?php echo $form->error($model,'idInmueble');?>
+	</div>
+
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Guardar' : 'Save'); ?>
