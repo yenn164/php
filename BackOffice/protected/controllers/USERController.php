@@ -36,8 +36,9 @@ class USERController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','assign'),
 				'users'=>array('admin'),
+                               
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -56,6 +57,18 @@ class USERController extends Controller
 		));
 	}
 
+        public function actionAssign($id)
+        {
+            If (Yii::app()->authManager->checkAccess($_GET["item"],$id))
+               (Yii::app()->authManager->revoke($_GET["item"],$id));
+           else 
+               Yii::app()->authManager->assign($_GET["item"],$id);
+               $this->redirect(array("view","id"=>$id));
+           
+                    
+        }
+        
+                       
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
