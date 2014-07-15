@@ -62,10 +62,10 @@ return array(
 		),*/
 		// uncomment the following to use a MySQL database
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=INMOBILIARIA',
+			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
 			'emulatePrepare' => true,
 			'username' => 'root',
-			'password' => '123456',
+			'password' => 'root',
 			'charset' => 'utf8',
 		),
 		
@@ -124,6 +124,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
                 'contactEmail'=>'contacto.domusinmo@gmail.com',
-                'urlPropreriesPic'=>'http://localhost/inmobiliaria/BackOffice/protected/images/upload/'
+                'urlPropreriesPic'=>'http://localhost/php/BackOffice/protected/images/upload/'
 	),
 );
