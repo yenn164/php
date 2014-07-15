@@ -139,6 +139,7 @@ if($model['tipo'] == 1){$typePropery = 'Casa';}
 				        <div class="content-1">
 				        	<p class="para top"><span></span><?php  echo $typePropery. '- Ubicado en '.$model['departamento'].', '.$model['ciudad']. ', en el barrio '.$model['barrio'].'. Dirección: '.$model['calle']. ' '. $model['numero'].' / '.$model['apto'].'. Publicado el '.$model['fechaPublicacion'] ?></p>
 							<ul>
+                                                                <li>Precio: </li><?php  echo $rows['moneda']==1?'$'. $rows['precio']:$rows['moneda']==2?'U$S'. $rows['precio']:'UI' . $rows['precio']?>
 								<li>Gastos comunes: <?php echo $model['gastosComunes']?></li>
 								<li>Superficie edificada: <?php echo $model['superEdif']?> m2</li>
 								<li>Año de Construcción: <?php echo $model['anioConst']?></li>

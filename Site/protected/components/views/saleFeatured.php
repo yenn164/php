@@ -25,7 +25,7 @@
                                     <img src="<?php echo $urlpic?>" alt=""/>
                                     <h3><?php echo $rows['ciudad']. ' '.$rows['barrio']. ' '.$rows['descripcion'] ?></h3>
                                     <div class="price">
-                                            <h4><?php echo $rows['precio']?><span>Detalles</span></h4>
+                                            <h4><?php  echo $rows['moneda']==1?'$'. $rows['precio']:$rows['moneda']==2?'U$S'. $rows['precio']:'UI' . $rows['precio']?><span>Detalles</span></h4>
                                     </div>
                                     <span class="b_btm"></span>
                             </a>

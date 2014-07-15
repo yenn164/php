@@ -16,9 +16,9 @@ class SaleFeaturedWidget extends CWidget {
     public function run() {
         
         $models = Yii::app()->db->createCommand()
-        ->select('i.idinmueble, i.foto, i.descripcion, i.tipo, i.ciudad, i.barrio, i.precio')
+        ->select('i.idinmueble, i.foto, i.descripcion, i.tipo, i.ciudad, i.barrio, i.precio, i.moneda')
         ->from('INMUEBLE i, TRANSACCION t')
-        ->where('i.destacado = 1 and t.idInmueble = i.idinmueble and t.tipoTrans = 1')
+        ->where('i.destacado = 1 and t.idInmueble = i.idinmueble and t.tipoTrans = 1 and t.idClienteInteres is null')
         ->queryAll();
         
         $this->render('saleFeatured', array(
