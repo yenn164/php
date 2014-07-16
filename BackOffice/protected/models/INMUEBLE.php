@@ -61,7 +61,7 @@ class INMUEBLE extends CActiveRecord
 		// will receive user inputs.
 		return array(
 //			array('fechaPublicacion, gastosComunes, superEdif, anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, tipo', 'required'),
-			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, precio, numero, apto', 'numerical', 'integerOnly'=>true),
+			array('anioConst, dormitorios, banios, cocina, living, comedor, terraza, piso, equipado, padron, mejoras, nivelado, agreste, precio, numero, apto, destacado', 'numerical', 'integerOnly'=>true),
                         array('latitud, longitud', 'numerical'),	
                         array('gastosComunes, superEdif', 'length', 'max'=>6),
 			array('tipo', 'length', 'max'=>10),
