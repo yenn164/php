@@ -67,8 +67,14 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'Id Inmueble'); ?>
             <?php 
+                        $static = array(
+                'idinmueble' => Yii::t(0,'Seleccione'), 
+                            );
+
+           
             $list = CHtml::listData($model->inmuebles, 'idinmueble', 'idinmueble');
-            echo $form->dropDownList($model, 'idInmueble', $list) ?>
+            
+            echo $form->dropDownList($model, 'idInmueble', $static + $list) ?>
     		<?php echo $form->error($model,'idInmueble');?>
 	</div>
 

@@ -85,14 +85,17 @@ class CLIENTEController extends Controller
 //                          $this->refresh();
 //                        $modelt->attributes=$_POST['TRANSACCION'];
 			if($model->insert()){
-                                       
-                          $modelt->idClientePropietario = $model->idCliente;
-                          $modelt->fechaTrans = $model->fechaTrans;
-                          $modelt->tipoTrans = $model->tipoTrans;
-                          $modelt->idInmueble = $model->idInmueble;
-                          $modelt->idTrans = $model->idTrans;
-                         
-                          $modelt->insert();
+                            if($model->idInmueble != 0){
+
+                                $modelt->idClientePropietario = $model->idCliente;
+                              $modelt->fechaTrans = $model->fechaTrans;
+                              $modelt->tipoTrans = $model->tipoTrans;
+                              $modelt->idInmueble = $model->idInmueble;
+                              $modelt->idTrans = $model->idTrans;
+
+                              $modelt->insert();
+                            }
+                          
 				$this->redirect(array('view','id'=>$model->idCliente));
                         }
 		}
